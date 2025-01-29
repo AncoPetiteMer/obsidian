@@ -26,8 +26,8 @@ In **supervised learning**, models are trained on labeled data (i.e., input feat
     - Examples:
         - Logistic Regression
         - Support Vector Machines ([[SVM]])
-        - Random Forest Classifier
-        - Neural Networks for classification
+        - [[Random Forest]] Classifier
+        -[[ Neural Networks]] for classification
         - Gradient Boosting Classifier (e.g., XGBoost, LightGBM)
 
 ---
@@ -40,14 +40,14 @@ In **unsupervised learning**, models are trained on unlabeled data to uncover pa
     
     - Groups data points into clusters based on similarity.
     - Examples:
-        - K-Means
+        - [[K-Means]]
         - DBSCAN
         - Hierarchical Clustering
 - **Dimensionality Reduction Models**:
     
     - Reduces the number of features while preserving the most important information.
     - Examples:
-        - PCA (Principal Component Analysis)
+        - [[PCA]] (Principal Component Analysis)
         - Autoencoders (a type of NN)
 
 ---

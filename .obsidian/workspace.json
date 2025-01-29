@@ -462,13 +462,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/SVM.md",
+                "file": "K-Means.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "SVM"
+              "title": "K-Means"
             }
           }
         ],
@@ -637,9 +637,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50dbffc22e576d4d",
+  "active": "220fe1f7377ff9ba",
   "lastOpenFiles": [
     "ML/Ml workflow/obsidian/Models.md",
+    "K-Means.md",
     "ML/Ml workflow/obsidian/SVM.md",
     "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
     "ML/Ml workflow/obsidian/Regularization.md",
@@ -664,7 +665,6 @@
     "ML/Ml workflow/Activation Functions.md",
     "ML/Ml workflow/obsidian/Dropout for Regularization.md",
     "ML/Ml workflow/obsidian/Dimensionality Reduction.md",
-    "ML/Ml workflow/obsidian/Data Preprocessing.md",
     "ML/Ml workflow/obsidian/LICENSE",
     "ML/Ml workflow/obsidian",
     "Obsidian/LICENSE",
