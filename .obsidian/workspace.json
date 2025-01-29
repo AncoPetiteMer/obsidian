@@ -1,0 +1,676 @@
+{
+  "main": {
+    "id": "1757ab50197793e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "59cee98da557ebba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36e2cfb37e758f72",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "0bad30e303b46713",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled"
+            }
+          },
+          {
+            "id": "7e62b6066b9371c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Machine Learning workflow on Garmin dataset.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Machine Learning workflow on Garmin dataset"
+            }
+          },
+          {
+            "id": "eae5015a7d383aa4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Machine Learning workflow on Garmin dataset.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Machine Learning workflow on Garmin dataset"
+            }
+          },
+          {
+            "id": "ba994b7da82dd845",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Feature Engineering.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Feature Engineering"
+            }
+          },
+          {
+            "id": "aea890e9cbf8b31e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Feature Engineering.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Feature Engineering"
+            }
+          },
+          {
+            "id": "a5b875c39c9ca068",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Class Imbalance Handling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Class Imbalance Handling"
+            }
+          },
+          {
+            "id": "4eba25450bc3f5f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Loss Function.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Loss Function"
+            }
+          },
+          {
+            "id": "4c6260c2c64ae18d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Optimizer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Optimizer"
+            }
+          },
+          {
+            "id": "304cea0a604840b1",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "f143269744cc6fa9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Performance Metrics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Performance Metrics"
+            }
+          },
+          {
+            "id": "5efba9eceeaf249f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Hyperparameter Tuning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hyperparameter Tuning"
+            }
+          },
+          {
+            "id": "c786f22bf7ab0ede",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Model Evaluation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Model Evaluation"
+            }
+          },
+          {
+            "id": "df5f5e2079f8a61a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Overfitting and Underfitting.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Overfitting and Underfitting"
+            }
+          },
+          {
+            "id": "d188ff8192a73124",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Data Preprocessing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Preprocessing"
+            }
+          },
+          {
+            "id": "63797ccfa0ecb65e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Handling Outliers.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Handling Outliers"
+            }
+          },
+          {
+            "id": "d24b75b59f72746e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Cross-Validation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cross-Validation"
+            }
+          },
+          {
+            "id": "e7c7d7e5282cbfb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Data Cleaning.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Cleaning"
+            }
+          },
+          {
+            "id": "df680e3f895536c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Regularization.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Regularization"
+            }
+          },
+          {
+            "id": "5dfea94a7407768b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Learning Rate.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Learning Rate"
+            }
+          },
+          {
+            "id": "9b45796ffe3003f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Batch Size.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Batch Size"
+            }
+          },
+          {
+            "id": "72f6ed844dba9879",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Visualization Techniques.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Visualization Techniques"
+            }
+          },
+          {
+            "id": "5c4805ed965da0dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Key Concepts.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Key Concepts"
+            }
+          },
+          {
+            "id": "fd2f443af9dbb921",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Feature Scaling.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Feature Scaling"
+            }
+          },
+          {
+            "id": "44a34109941eb160",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Key Concepts.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Key Concepts"
+            }
+          },
+          {
+            "id": "e7996283e29132e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Dropout for Regularization.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dropout for Regularization"
+            }
+          },
+          {
+            "id": "1973063c1ae66e6e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "c6b2e333eae06f65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning Workflow, general purpose.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Machine Learning Workflow, general purpose"
+            }
+          },
+          {
+            "id": "b2f39372a51a96b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/Optimizer.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Optimizer"
+            }
+          },
+          {
+            "id": "072348f854d033b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning Workflow, general purpose.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Machine Learning Workflow, general purpose"
+            }
+          },
+          {
+            "id": "1c86b39ef9e1ec9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Understanding Random Forest with a Titanic Survival Prediction Story 🚢🌲.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Understanding Random Forest with a Titanic Survival Prediction Story 🚢🌲"
+            }
+          },
+          {
+            "id": "03f49db91007a591",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "220fe1f7377ff9ba",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ],
+        "currentTab": 32
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7c302942eb02e983",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f69008d4439e3db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50dbffc22e576d4d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "53b64cb8eaca5b1b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2d88344b2b4c3411",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d1bb4bb1cc57db9d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6462b4ff0c5b400b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6eaca0bd08fc31e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ML/Ml workflow/Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled"
+            }
+          },
+          {
+            "id": "5d2c8d6a0bcf5a81",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ML/Machine Learning Workflow, general purpose.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Machine Learning Workflow, general purpose"
+            }
+          },
+          {
+            "id": "58f4fd7f3d619ff7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "465ab2397930a8db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ML/Machine Learning Workflow, general purpose.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Machine Learning Workflow, general purpose"
+            }
+          },
+          {
+            "id": "230669f1dcf0bf88",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "660732617e4b93a0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "220fe1f7377ff9ba",
+  "lastOpenFiles": [
+    "ML/Ml workflow/Machine Learning Workflow, general purpose.md",
+    "ML/Ml workflow/Training Loop.md",
+    "ML/Ml workflow/obsidian/Visualization Techniques.md",
+    "ML/Ml workflow/obsidian/Understanding Random Forest with a Titanic Survival Prediction Story 🚢🌲.md",
+    "ML/Ml workflow/obsidian/Understanding and Choosing Embedding Dimensions.md",
+    "ML/Ml workflow/obsidian/Transformers.md",
+    "ML/Ml workflow/obsidian/Loss Function.md",
+    "ML/Ml workflow/obsidian/Learning Rate.md",
+    "ML/Ml workflow/obsidian/Hyperparameter Tuning.md",
+    "ML/Ml workflow/obsidian/Handling Outliers.md",
+    "ML/Ml workflow/obsidian/Feature Scaling.md",
+    "ML/Ml workflow/obsidian/Feature Engineering.md",
+    "ML/Ml workflow/obsidian/Ensemble Learning.md",
+    "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
+    "ML/Ml workflow/obsidian/Eigenvalues & Eigenvectors.md",
+    "ML/Ml workflow/obsidian/EDA.md",
+    "ML/Ml workflow/obsidian/Early Stopping.md",
+    "ML/Ml workflow/Activation Functions.md",
+    "ML/Ml workflow/obsidian/Dropout for Regularization.md",
+    "ML/Ml workflow/obsidian/Dimensionality Reduction.md",
+    "ML/Ml workflow/obsidian/Data Preprocessing.md",
+    "ML/Ml workflow/obsidian/Data Cleaning.md",
+    "ML/Ml workflow/obsidian/Cross-Validation.md",
+    "ML/Ml workflow/obsidian/Class Imbalance Handling.md",
+    "ML/Ml workflow/obsidian/Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled.md",
+    "ML/Ml workflow/obsidian/Bootstrap Sampling.md",
+    "ML/Ml workflow/obsidian/LICENSE",
+    "ML/Ml workflow/obsidian",
+    "Obsidian/LICENSE",
+    "Obsidian",
+    "ML/Ml workflow",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "ML"
+  ]
+}
