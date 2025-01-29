@@ -25,7 +25,7 @@ In **supervised learning**, models are trained on labeled data (i.e., input feat
     - Used for predicting categorical outputs (e.g., spam or not spam, survival or death).
     - Examples:
         - Logistic Regression
-        - Support Vector Machines (SVM)
+        - Support Vector Machines ([[SVM]])
         - Random Forest Classifier
         - Neural Networks for classification
         - Gradient Boosting Classifier (e.g., XGBoost, LightGBM)
