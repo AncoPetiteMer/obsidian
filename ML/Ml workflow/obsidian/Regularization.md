@@ -13,7 +13,7 @@ Imagine you’re building a model to predict house prices based on features like
 - It performs **extremely well on the training data** (low loss).
 - But on new, unseen data (validation or test data), it performs poorly.
 
-This is a classic case of **overfitting**: the model is too complex and is memorizing the training data, including its noise and outliers, instead of learning generalizable patterns. Regularization helps by discouraging the model from being overly complex and keeps it from "memorizing the noise."
+This is a classic case of **overfitting**([[Overfitting and Underfitting]]): the model is too complex and is memorizing the training data, including its noise and outliers, instead of learning generalizable patterns. Regularization helps by discouraging the model from being overly complex and keeps it from "memorizing the noise."
 
 ---
 
@@ -41,7 +41,7 @@ There are several types of regularization, depending on how the constraints are 
 - Adds a penalty to the **squared values** of the model’s weights.
 - Shrinks all weights closer to zero but doesn’t make them exactly zero. This ensures smoother, more generalizable models.
 
-#### **3. Dropout (For Neural Networks)**
+#### **3. [[Dropout for Regularization]] (For Neural Networks)**
 
 - Randomly "drops" (deactivates) a fraction of neurons during each training iteration.
 - Prevents the network from relying too heavily on specific neurons, encouraging more robust learning.
@@ -54,11 +54,35 @@ There are several types of regularization, depending on how the constraints are 
 
 Let’s use a simple regression problem to demonstrate L1 and L2 regularization.
 
-python
+```python
+import numpy as np
+from sklearn.linear_model import LinearRegression, Lasso, Ridge
+from sklearn.metrics import mean_squared_error
 
-CopierModifier
+# Dataset: House size and price
+X = np.array([[1500], [2000], [2500], [3000], [3500]])
+y = np.array([300000, 400000, 500000, 600000, 700000])
 
-`import numpy as np from sklearn.linear_model import LinearRegression, Lasso, Ridge from sklearn.metrics import mean_squared_error  # Dataset: House size and price X = np.array([[1500], [2000], [2500], [3000], [3500]]) y = np.array([300000, 400000, 500000, 600000, 700000])  # Train a standard linear regression model lr = LinearRegression() lr.fit(X, y) y_pred = lr.predict(X) print("Linear Regression Coefficients:", lr.coef_)  # Train a model with L1 Regularization (Lasso) lasso = Lasso(alpha=0.1)  # Alpha is the regularization strength lasso.fit(X, y) y_pred_lasso = lasso.predict(X) print("Lasso Coefficients:", lasso.coef_)  # Train a model with L2 Regularization (Ridge) ridge = Ridge(alpha=0.1)  # Alpha is the regularization strength ridge.fit(X, y) y_pred_ridge = ridge.predict(X) print("Ridge Coefficients:", ridge.coef_)`
+# Train a standard linear regression model
+lr = LinearRegression()
+lr.fit(X, y)
+y_pred = lr.predict(X)
+print("Linear Regression Coefficients:", lr.coef_)
+
+# Train a model with L1 Regularization (Lasso)
+lasso = Lasso(alpha=0.1)  # Alpha is the regularization strength
+lasso.fit(X, y)
+y_pred_lasso = lasso.predict(X)
+print("Lasso Coefficients:", lasso.coef_)
+
+# Train a model with L2 Regularization (Ridge)
+ridge = Ridge(alpha=0.1)  # Alpha is the regularization strength
+ridge.fit(X, y)
+y_pred_ridge = ridge.predict(X)
+print("Ridge Coefficients:", ridge.coef_)
+
+```
+
 
 **Output**:
 
@@ -72,11 +96,31 @@ CopierModifier
 
 Dropout is a regularization technique used in neural networks to prevent overfitting. Let’s see how it’s implemented in PyTorch.
 
-python
+```python
+import torch
+import torch.nn as nn
 
-CopierModifier
+# Define a simple neural network with Dropout
+class SimpleNN(nn.Module):
+    def __init__(self):
+        super(SimpleNN, self).__init__()
+        self.network = nn.Sequential(
+            nn.Linear(1, 64),  # Input layer to hidden layer
+            nn.ReLU(),         # Activation function
+            nn.Dropout(0.5),   # Dropout: Randomly drops 50% of neurons
+            nn.Linear(64, 1)   # Hidden layer to output layer
+        )
 
-`import torch import torch.nn as nn  # Define a simple neural network with Dropout class SimpleNN(nn.Module):     def __init__(self):         super(SimpleNN, self).__init__()         self.network = nn.Sequential(             nn.Linear(1, 64),     # Input layer to hidden layer             nn.ReLU(),            # Activation function             nn.Dropout(0.5),      # Dropout: Randomly drops 50% of neurons             nn.Linear(64, 1)      # Hidden layer to output layer         )      def forward(self, x):         return self.network(x)  # Initialize the model model = SimpleNN()  # Print the model architecture print(model)`
+    def forward(self, x):
+        return self.network(x)
+
+# Initialize the model
+model = SimpleNN()
+
+# Print the model architecture
+print(model)
+
+```
 
 In this network:
 
@@ -95,11 +139,38 @@ Imagine we train three models:
 
 Let’s visualize these with some made-up data.
 
-python
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.linear_model import LinearRegression, Lasso, Ridge
 
-CopierModifier
+# Generate sample data
+X = np.linspace(0, 10, 100).reshape(-1, 1)
+y = 2 * X.flatten() + np.random.normal(0, 1, 100)  # True line with noise
 
-`import matplotlib.pyplot as plt  # Generate sample data X = np.linspace(0, 10, 100).reshape(-1, 1) y = 2 * X.flatten() + np.random.normal(0, 1, 100)  # True line with noise  # Fit models lr.fit(X, y) lasso.fit(X, y) ridge.fit(X, y)  # Plot the results plt.scatter(X, y, color="blue", label="Data", alpha=0.5) plt.plot(X, lr.predict(X), color="green", label="No Regularization (Overfitting)") plt.plot(X, lasso.predict(X), color="red", label="L1 Regularization (Lasso)") plt.plot(X, ridge.predict(X), color="orange", label="L2 Regularization (Ridge)") plt.legend() plt.title("Impact of Regularization") plt.show()`
+# Initialize models
+lr = LinearRegression()
+lasso = Lasso(alpha=0.1)
+ridge = Ridge(alpha=0.1)
+
+# Fit models
+lr.fit(X, y)
+lasso.fit(X, y)
+ridge.fit(X, y)
+
+# Plot the results
+plt.scatter(X, y, color="blue", label="Data", alpha=0.5)
+plt.plot(X, lr.predict(X), color="green", label="No Regularization (Linear Regression)")
+plt.plot(X, lasso.predict(X), color="red", label="L1 Regularization (Lasso)")
+plt.plot(X, ridge.predict(X), color="orange", label="L2 Regularization (Ridge)")
+plt.legend()
+plt.title("Impact of Regularization")
+plt.xlabel("X")
+plt.ylabel("y")
+plt.show()
+
+```
+
 
 **Result**:
 

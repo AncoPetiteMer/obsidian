@@ -472,17 +472,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
+                "file": "ML/Ml workflow/obsidian/Regularization.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Complete Breakdown of Machine Learning Subfields"
+              "title": "Regularization"
+            }
+          },
+          {
+            "id": "cfe32dbcc8d80a56",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Naïve Bayes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Naïve Bayes"
+            }
+          },
+          {
+            "id": "fb34c046e9998aa1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Naïve Bayes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Naïve Bayes"
+            }
+          },
+          {
+            "id": "08cf9f8fc230f3d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Multi-Head Attention.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Multi-Head Attention"
+            }
+          },
+          {
+            "id": "f35772e012dabb12",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 33
+        "currentTab": 37
       }
     ],
     "direction": "vertical"
@@ -647,34 +702,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c7895d1dac8c561c",
+  "active": "f35772e012dabb12",
   "lastOpenFiles": [
+    "ML/Ml workflow/obsidian/Transformers.md",
+    "ML/Ml workflow/obsidian/Embedding.md",
+    "Embeddings.md",
+    "ML/Ml workflow/obsidian/Neural Network.md",
+    "ML/Ml workflow/obsidian/Naïve Bayes.md",
+    "ML/Ml workflow/obsidian/Multi-Head Attention.md",
+    "Dropout.md",
+    "ensemble methods.md",
+    "ML/Ml workflow/obsidian/Data Preprocessing.md",
+    "Recording 20250130112529.webm",
+    "ML/Ml workflow/obsidian/Better Alternatives to One-Hot Encoding.md",
     "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
+    "ML/Ml workflow/obsidian/Regularization.md",
+    "ML/Ml workflow/obsidian/Hyperparameter Tuning.md",
+    "ML/Ml workflow/obsidian/Learning Rate.md",
+    "ML/Ml workflow/obsidian/Batch Size.md",
     "ML/Ml workflow/obsidian/K-Means.md",
     "ML/Ml workflow/obsidian/Random Forest.md",
-    "ML/Ml workflow/obsidian/Batch Size.md",
     "ML/Ml workflow/obsidian/Models.md",
     "ML/Ml workflow/obsidian/SVM.md",
     "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
-    "ML/Ml workflow/obsidian/Regularization.md",
     "ML/Ml workflow/obsidian/README.md",
     "ML/Ml workflow/Machine Learning Workflow, general purpose.md",
     "ML/Ml workflow/Training Loop.md",
     "ML/Ml workflow/obsidian/Visualization Techniques.md",
     "ML/Ml workflow/obsidian/Understanding Random Forest with a Titanic Survival Prediction Story 🚢🌲.md",
-    "ML/Ml workflow/obsidian/Understanding and Choosing Embedding Dimensions.md",
-    "ML/Ml workflow/obsidian/Transformers.md",
     "ML/Ml workflow/obsidian/Loss Function.md",
-    "ML/Ml workflow/obsidian/Learning Rate.md",
-    "ML/Ml workflow/obsidian/Hyperparameter Tuning.md",
-    "ML/Ml workflow/obsidian/Handling Outliers.md",
-    "ML/Ml workflow/obsidian/Feature Scaling.md",
-    "ML/Ml workflow/obsidian/Feature Engineering.md",
-    "ML/Ml workflow/obsidian/Ensemble Learning.md",
-    "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
-    "ML/Ml workflow/obsidian/Eigenvalues & Eigenvectors.md",
-    "ML/Ml workflow/obsidian/EDA.md",
-    "ML/Ml workflow/obsidian/Early Stopping.md",
     "ML/Ml workflow/obsidian/LICENSE",
     "ML/Ml workflow/obsidian",
     "Obsidian/LICENSE",

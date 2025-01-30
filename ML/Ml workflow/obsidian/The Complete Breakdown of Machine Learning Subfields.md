@@ -16,13 +16,13 @@ Let’s embark on a journey through this city and explore its districts, underst
     - **Support Vector Machines ([[SVM]])** – Finds the optimal decision boundary.
     - **Decision Trees & Random Forests** – Hierarchical rule-based learning.
     - **k-Nearest Neighbors (k-NN)** – Classifies based on nearest neighbors.
-    - **Naïve Bayes** – Probability-based classification.
+    - **[[Naïve Bayes]]** – Probability-based classification.
 - **Regression (Predicting Continuous Values)**
     
     - **Linear Regression** – Fits a straight-line model.
     - **Polynomial Regression** – Fits a curved model.
     - **Neural Networks for Regression** – Deep learning-based regression.
-    - **Gradient Boosting (XGBoost, LightGBM, CatBoost)** – Advanced ensemble methods.
+    - **Gradient Boosting (XGBoost, LightGBM, CatBoost)** – Advanced ensemble methods ([[Ensemble Learning]]).
 
 🛠 **Example Use Cases:**
 
