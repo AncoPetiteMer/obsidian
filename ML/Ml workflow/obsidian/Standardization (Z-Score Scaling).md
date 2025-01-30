@@ -78,17 +78,8 @@ print(df)
 
 ```
 
-Résultat
+**Results**:
 
-  Climber  Height  Height_Z_Score  Manual_Z_Score
-0   Alice    2900       -1.215895       -1.215895
-1   Alice    3050       -0.920137       -0.920137
-2   Alice    3100       -0.821551       -0.821551
-3     Bob    3900        0.755827        0.755827
-4     Bob    4050        1.051585        1.051585
-
-Manual Z-Score Calculation
-```python
 |Climber|Height|Height_Z_Score|Manual_Z_Score|
 |---|---|---|---|
 |Alice|2900|-1.2158954428164332|-1.2158954428164332|
@@ -96,8 +87,6 @@ Manual Z-Score Calculation
 |Alice|3100|-0.8215509748759683|-0.8215509748759683|
 |Bob|3900|0.7558268968858914|0.7558268968858914|
 |Bob|4050|1.0515852478412402|1.0515852478412402|
-
-```
 
 I've manually calculated the **standard deviation (σ)** and used it to compute the **Z-scores** for each climber's height. The values match those obtained using `StandardScaler` from `sklearn`, confirming that the calculation is correct.
 

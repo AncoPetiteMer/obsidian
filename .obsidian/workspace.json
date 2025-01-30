@@ -530,10 +530,14 @@
             "id": "f35772e012dabb12",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
+                "bFile": "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: Standardization (Z-Score Scaling)"
             }
           }
         ],
@@ -704,6 +708,8 @@
   },
   "active": "f35772e012dabb12",
   "lastOpenFiles": [
+    "ML/Ml workflow/obsidian/Random Forest.md",
+    "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
     "ML/Ml workflow/obsidian/Transformers.md",
     "ML/Ml workflow/obsidian/Embedding.md",
     "Embeddings.md",
@@ -721,10 +727,8 @@
     "ML/Ml workflow/obsidian/Learning Rate.md",
     "ML/Ml workflow/obsidian/Batch Size.md",
     "ML/Ml workflow/obsidian/K-Means.md",
-    "ML/Ml workflow/obsidian/Random Forest.md",
     "ML/Ml workflow/obsidian/Models.md",
     "ML/Ml workflow/obsidian/SVM.md",
-    "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
     "ML/Ml workflow/obsidian/README.md",
     "ML/Ml workflow/Machine Learning Workflow, general purpose.md",
     "ML/Ml workflow/Training Loop.md",
