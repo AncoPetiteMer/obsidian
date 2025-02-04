@@ -36,6 +36,8 @@ Each tree works like this:
 
 #### **2.1 Gini Impurity: The Fairness Test**
 
+ More explanation in ### **[[Mathematical Foundations of Random Forests]]**
+ 
 Imagine a node contains a mix of passengers:
 
 - 60% survived $(p1=0.6$.
