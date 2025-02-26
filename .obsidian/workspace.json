@@ -69,24 +69,10 @@
             "id": "89a5fb4e3d8b7ecb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -330,8 +316,9 @@
   },
   "active": "89a5fb4e3d8b7ecb",
   "lastOpenFiles": [
+    "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
+    "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
     "La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
-    "Untitled.md",
     "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
     "ML/Ml workflow/obsidian/Transformers.md",
     "ML/Ml workflow/obsidian/Usefull references.md",
@@ -340,7 +327,6 @@
     "ML/Ml workflow/obsidian/Optimizer.md",
     "ML/Ml workflow/obsidian/The Tale of the Fire Mage, Understanding Temperature and top P in Transformers.md",
     "ML/Ml workflow/obsidian/Gini Impurity.md",
-    "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
     "ML/Ml workflow/obsidian/Random Forest.md",
     "ML/Ml workflow/obsidian/Mathematical Foundations of Random Forests.md",
     "ML/Ml workflow/obsidian/Activation Functions.md",
