@@ -35,9 +35,19 @@
             "id": "36c25d71bdd5e193",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "f212676cd9bbddf7",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/Transformers.md",
+                "file": "La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +62,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Transformers"
+              "title": "La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement"
+            }
+          },
+          {
+            "id": "89a5fb4e3d8b7ecb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           },
           {
@@ -128,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -148,7 +182,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -181,8 +215,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -295,10 +328,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "36c25d71bdd5e193",
+  "active": "89a5fb4e3d8b7ecb",
   "lastOpenFiles": [
-    "Usefull references.md",
+    "La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
+    "Untitled.md",
+    "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
     "ML/Ml workflow/obsidian/Transformers.md",
+    "ML/Ml workflow/obsidian/Usefull references.md",
     "ML/Ml workflow/obsidian/Embedding.md",
     "ML/Ml workflow/obsidian/SVM.md",
     "ML/Ml workflow/obsidian/Optimizer.md",
@@ -321,9 +357,6 @@
     "ensemble methods.md",
     "ML/Ml workflow/obsidian/Data Preprocessing.md",
     "Recording 20250130112529.webm",
-    "ML/Ml workflow/obsidian/Better Alternatives to One-Hot Encoding.md",
-    "ML/Ml workflow/obsidian/Regularization.md",
-    "ML/Ml workflow/obsidian/Learning Rate.md",
     "ML/Ml workflow/obsidian/LICENSE",
     "ML/Ml workflow/obsidian",
     "Obsidian/LICENSE",
