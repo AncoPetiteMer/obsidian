@@ -1,4 +1,4 @@
-### **The Magic of Attention: How a Transformer Learns to Focus (With Python Code)**
+### **The Magic of Attention: How a Transformer Learns to Focus (With Python Code) #Transformers**
 
 > _Imagine you walk into a grand library, one of the largest in the world, filled with millions of books. You are on a mission to find the best books about “ancient civilizations.” However, there's a catch: none of the books have titles, descriptions, or any clear organization. They are just placed randomly on shelves. How do you even begin your search?_
 

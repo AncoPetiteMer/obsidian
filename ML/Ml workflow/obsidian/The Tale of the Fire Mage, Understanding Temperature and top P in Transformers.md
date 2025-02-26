@@ -1,6 +1,6 @@
 Once upon a time, in the grand **Kingdom of Words**, there lived a storyteller named **Lyra**. She was renowned for crafting the most captivating tales, but she had a secret—she didn’t write alone. Hidden in her study was a magical **Quill of Infinite Possibilities**, a tool so powerful it could generate words on its own.
 
-However, controlling the Quill’s behavior was tricky. If left unchecked, it would either **repeat the same predictable phrases** or **spiral into complete nonsense**. To tame the Quill’s magic, Lyra had two powerful enchantments: **Temperature** and **Top-p Sampling**.
+However, controlling the Quill’s behavior was tricky. If left unchecked, it would either **repeat the same predictable phrases** or **spiral into complete nonsense**. To tame the Quill’s magic, Lyra had two powerful enchantments: **Temperature** and **Top-p Sampling** for [[Transformers]] world.
 
 ---
 
@@ -26,13 +26,13 @@ _"The storm was strong. The wind blew. The rain fell."_
 
 Mathematically, the temperature adjustment was described by:
 
-P(xi)=exp⁡(zi/T)∑jexp⁡(zj/T)P(x_i) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}P(xi​)=∑j​exp(zj​/T)exp(zi​/T)​
+$P(x_i) = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)}$
 
 Where:
 
-- P(xi)P(x_i)P(xi​) is the probability of choosing a word xix_ixi​,
-- ziz_izi​ is the word’s raw score,
-- TTT is the **temperature** that controls how "spread out" the probabilities are.
+- $P(x_i)$ is the probability of choosing a word xix_ixi​,
+- $z_iz$ is the word’s raw score,
+- $T$ is the **temperature** that controls how "spread out" the probabilities are.
 
 The **higher** the temperature, the more uniform the probabilities became, increasing randomness. The **lower** the temperature, the sharper the probabilities, making the Quill **choose only the safest words**.
 

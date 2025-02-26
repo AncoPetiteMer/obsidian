@@ -37,9 +37,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Tale of the Fire Mage, Understanding Temperature and top P in Transformers.md",
+                "file": "ML/Ml workflow/obsidian/Transformers.md",
                 "mode": "source",
-                "source": true,
+                "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -52,7 +52,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The Tale of the Fire Mage, Understanding Temperature and top P in Transformers"
+              "title": "Transformers"
+            }
+          },
+          {
+            "id": "4161806b18513339",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Optimizer.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Optimizer"
             }
           },
           {
@@ -136,7 +160,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "temperat",
+                "query": "tag:#Transformers",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -157,7 +181,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -272,19 +297,22 @@
   },
   "active": "36c25d71bdd5e193",
   "lastOpenFiles": [
-    "Mathematical Foundations of Random Forests.md",
-    "The Tale of the Fire Mage, Understanding Temperature and top P in Transformers.md",
-    "ML/Ml workflow/obsidian/Activation Functions.md",
+    "Usefull references.md",
     "ML/Ml workflow/obsidian/Transformers.md",
-    "ML/Ml workflow/obsidian/Hyperparameter Tuning.md",
-    "ML/Ml workflow/obsidian/Random Forest.md",
-    "Gini Impurity.md",
-    "ML/Ml workflow/obsidian/Cross-Validation.md",
+    "ML/Ml workflow/obsidian/Embedding.md",
+    "ML/Ml workflow/obsidian/SVM.md",
+    "ML/Ml workflow/obsidian/Optimizer.md",
+    "ML/Ml workflow/obsidian/The Tale of the Fire Mage, Understanding Temperature and top P in Transformers.md",
+    "ML/Ml workflow/obsidian/Gini Impurity.md",
     "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
+    "ML/Ml workflow/obsidian/Random Forest.md",
+    "ML/Ml workflow/obsidian/Mathematical Foundations of Random Forests.md",
+    "ML/Ml workflow/obsidian/Activation Functions.md",
+    "ML/Ml workflow/obsidian/Hyperparameter Tuning.md",
+    "ML/Ml workflow/obsidian/Cross-Validation.md",
     "ML/Ml workflow/obsidian/Machine Learning Workflow, general purpose.md",
     "Embeddings.md",
     "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
-    "ML/Ml workflow/obsidian/Embedding.md",
     "ML/Ml workflow/obsidian/Embeddings.md",
     "ML/Ml workflow/obsidian/Neural Network.md",
     "ML/Ml workflow/obsidian/Naïve Bayes.md",
@@ -296,9 +324,6 @@
     "ML/Ml workflow/obsidian/Better Alternatives to One-Hot Encoding.md",
     "ML/Ml workflow/obsidian/Regularization.md",
     "ML/Ml workflow/obsidian/Learning Rate.md",
-    "ML/Ml workflow/obsidian/Batch Size.md",
-    "ML/Ml workflow/obsidian/K-Means.md",
-    "ML/Ml workflow/obsidian/Models.md",
     "ML/Ml workflow/obsidian/LICENSE",
     "ML/Ml workflow/obsidian",
     "Obsidian/LICENSE",
