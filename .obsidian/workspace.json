@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "76a1d05576134265",
+            "id": "36c25d71bdd5e193",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematical Foundations of Random Forests.md",
+                "file": "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,17 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Mathematical Foundations of Random Forests"
-            }
-          },
-          {
-            "id": "36c25d71bdd5e193",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure"
             }
           },
           {
@@ -47,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
+                "file": "ML/Ml workflow/obsidian/La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -69,19 +59,9 @@
             "id": "89a5fb4e3d8b7ecb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "4161806b18513339",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/Optimizer.md",
+                "file": "ML/Ml workflow/obsidian/Transformers.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -96,59 +76,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Optimizer"
-            }
-          },
-          {
-            "id": "92def10fbb3573bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gini Impurity.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Gini Impurity"
-            }
-          },
-          {
-            "id": "4de2cecacd2b5531",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gini Impurity.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Gini Impurity"
+              "title": "Transformers"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Transformers",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,7 +133,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -255,7 +188,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -314,17 +249,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "89a5fb4e3d8b7ecb",
+  "active": "f212676cd9bbddf7",
   "lastOpenFiles": [
     "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
-    "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
-    "La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
-    "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
+    "ML/Ml workflow/obsidian/La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
     "ML/Ml workflow/obsidian/Transformers.md",
+    "ML/Ml workflow/obsidian/Optimizer.md",
     "ML/Ml workflow/obsidian/Usefull references.md",
+    "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
+    "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
     "ML/Ml workflow/obsidian/Embedding.md",
     "ML/Ml workflow/obsidian/SVM.md",
-    "ML/Ml workflow/obsidian/Optimizer.md",
     "ML/Ml workflow/obsidian/The Tale of the Fire Mage, Understanding Temperature and top P in Transformers.md",
     "ML/Ml workflow/obsidian/Gini Impurity.md",
     "ML/Ml workflow/obsidian/Random Forest.md",
