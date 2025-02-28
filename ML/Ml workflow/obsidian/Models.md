@@ -27,7 +27,7 @@ In **supervised learning**, models are trained on labeled data (i.e., input feat
         - Logistic Regression
         - Support Vector Machines ([[SVM]])
         - [[Random Forest]] Classifier
-        -[[Neural Network]] for classification
+        -[[ML/Ml workflow/obsidian/Neural Networks]] for classification
         - Gradient Boosting Classifier (e.g., XGBoost, LightGBM)
 
 ---

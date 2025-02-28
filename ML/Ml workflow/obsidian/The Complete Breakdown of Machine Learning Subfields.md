@@ -132,7 +132,7 @@ Let’s embark on a journey through this city and explore its districts, underst
 
 ### 🔑 **Key Algorithms:**
 
-- **Deep [[Neural Networks]] (DNNs)** – Fully connected layers.
+- **Deep [[ML/Ml workflow/obsidian/Neural Networks|Neural Networks]] (DNNs)** – Fully connected layers.
 - **Convolutional Neural Networks (CNNs)** – Image recognition (AlexNet, VGG, ResNet).
 - **Recurrent Neural Networks (RNNs)** – Sequence-based tasks (LSTMs, GRUs).
 - **[[Transformers]] (BERT, GPT, ViT)** – Advanced language ([[NLP glossary]]) and vision models.

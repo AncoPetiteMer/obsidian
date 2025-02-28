@@ -1,4 +1,5 @@
 # The Deep Learning Odyssey: From AlexNet to Modern AI (2012–Present)
+[[Neural Networks history]]
 
 The evolution of neural networks over the past decade reads like an epic saga in technology. In 2012, a breakthrough CNN _conquered_ image recognition, sparking a deep learning revolution. From there, networks learned to remember sequences, generate art, and even challenge the dominance of convolution itself. In this chronological journey, we’ll meet the key architectures—each a hero of their era—detailed in both concept and code. _(We’ll use PyTorch for deep learning code and scikit-learn for a few comparisons.)_ Prepare for technical depth, analogies, a bit of humor, and plenty of insights as we travel from **AlexNet** to **transformers** and **diffusion models**.
 
@@ -84,7 +85,7 @@ After CNNs conquered images, researchers turned to sequences: language, speech, 
 
 **How RNNs work:** Think of an RNN as a recurring cell that reads inputs one by one. At each time step $t$, the cell takes the current input $x_t$ and the previous hidden state $h_{t-1}$ and produces a new hidden state $h_t = f(W \cdot [h_{t-1}, x_t])$ (and possibly an output $y_t$). All time steps share the same network weights $W$. The effect is like having a deep neural network **unrolled in time** – one layer per time step, all with tied weights.
 
-![https://kvitajakub.github.io/2016/04/14/rnn-diagrams/](blob:https://chatgpt.com/d5339055-f094-4dd1-8acf-ebb02d3c1062)
+![RNN architecture](https://kvitajakub.github.io/img/rnn-unrolled.svg)
 
 _Figure: **Unrolled RNN** over a sequence. On the left, the RNN is shown as a loop (green box A feeding into itself). On the right, the loop is unrolled into a chain: each copy of cell A processes one input $x_i$ and produces a hidden state $h_i$【9†】. The same weights apply at each step. Backpropagation through time (BPTT) will propagate gradients from the end of the sequence back through each copy (dashed arrows), adjusting the weights._
 
@@ -139,7 +140,7 @@ f_t = \sigma(W_f \cdot [h_{t-1}, x_t]) # forget gate i_t = \sigma(W_i \cdot [h_{
 
 Here $\sigma$ is the sigmoid function (outputs 0 to 1, perfect for gating), and $\tanh$ squashes inputs between -1 and 1 (to create candidate values). The `*` denotes elementwise multiplication. The LSTM gates allow it to **retain information over long periods**: for example, if $f_t \approx 1$ and $i_t \approx 0$ for many steps, the cell state $C_t$ basically carries on unchanged – remembering whatever was written in it initially. This ability to have nearly constant error flow (via $C_t$) mitigates the vanishing gradient problem. It’s like an **information highway** through time where gradients can flow easily (the highway being the cell state, with forget gate near 1.0 allowing gradient to just pass through).
 
-![https://kvitajakub.github.io/2016/04/14/rnn-diagrams/](blob:https://chatgpt.com/197baf36-a344-4c4e-b775-a968ac94a776)
+![LSTM architecture](https://kvitajakub.github.io/img/lstm-peepholes.svg)
 
 _Figure: **LSTM cell diagram** (with a variant including peephole connections). The cell state runs through the top (line across the cell), being adjusted by gates: the forget gate $f_t$ (left) multiplies the old cell state $C_{t-1}$ (line coming from top left) by some factor in [0,1]; the input gate $i_t$ (middle left) decides how much of the new candidate $\tilde{C}_t$ (computed via tanh) to add in; the output gate $o_t$ (right) controls how much of the cell state (passed through tanh) to reveal as $h_t$. Sigmoid ($\sigma$) activations (yellow) produce gate values, and tanh (purple) produces candidate or scaled outputs. The multiplicative interactions (pink ⨉ and +) allow gating【10†】._
 
@@ -179,7 +180,7 @@ z_t = \sigma(W_z \cdot [h_{t-1}, x_t]) # update gate (mixes input/forget) r_t = 
 
 The update gate $z_t$ decides how much of the previous state to keep (if $z_t$ is 1 for a unit, it keeps the old state, no change; if 0, it completely updates to the new candidate). The reset gate $r_t$ controls how much of the past to forget when computing the new candidate $\tilde{h}_t$ (if $r_t$ is 0, we ignore the old hidden state, essentially resetting memory; if 1, we fully use the previous state).
 
-![https://kvitajakub.github.io/2016/04/14/rnn-diagrams/](blob:https://chatgpt.com/46ea735d-4b9a-4b97-97a1-18f8aef3a312)
+![GRU architecture](https://kvitajakub.github.io/img/gru.svg)
 
 _Figure: **GRU cell**. It has a simplified design with only two gates: reset gate $r_t$ (left) and update gate $z_t$ (middle). The GRU directly produces a new hidden state $\tilde{h}_t$ via a candidate (right tanh node) that uses a reset-modulated previous state. The final $h_t$ is a linear interpolation between the old state $h_{t-1}$ and the new candidate, controlled by $z_t$ (note the $(1 - z_t)$ flowing into the pink + node)【11†】._
 
@@ -213,7 +214,7 @@ As deep learning matured, researchers explored unsupervised learning – getting
 
 _Figure: **Autoencoder architecture.** The network consists of two parts: an **encoder** that compresses the input $X$ into a latent code $h$ (also called _bottleneck_ or _latent vector_), and a **decoder** that reconstructs $X'$ from $h$. The encoder and decoder are often mirror-symmetric neural networks. By training $X' \approx X$ (minimizing reconstruction error), the autoencoder learns an efficient encoding of the data​_
 
-_[en.wikipedia.org](https://en.wikipedia.org/wiki/Autoencoder#:~:text=ImageA%20schema%20of%20an%20autoencoder,learning%20%20and%20%2079)_
+_[Autoencoders architecture](https://en.wikipedia.org/wiki/Autoencoder#/media/File:Autoencoder_schema.png)_
 
 _._
 
@@ -598,7 +599,7 @@ Convolutional neural networks had been the undisputed champs of vision for a lon
 
 _Figure: **Vision Transformer architecture.** The image is split into fixed-size patches (e.g., 16×16 pixels) which are flattened and fed through a linear projection to create patch embeddings. A special [CLS] token is prepended (purple), and its output at the end is used for classification. The sequence of patch embeddings is then processed by a Transformer Encoder (gray box) just like a sequence of word embeddings​_
 
-_[en.wikipedia.org](https://en.wikipedia.org/wiki/Vision_transformer#:~:text=ImageThe%20architecture%20of%20vision%20transformer,entering%20a%20standard%20Transformer%20encoder)_
+_[Vision Transformers architecture](https://en.wikipedia.org/wiki/Vision_transformer#/media/File:Vision_Transformer.png)_
 
 _. Finally, an MLP head (yellow) on [CLS] outputs the class. ViTs thus treat images like sequences of word patches._
 

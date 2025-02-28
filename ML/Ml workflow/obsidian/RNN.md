@@ -17,7 +17,7 @@ Imagine an elf, Legolas, in battle:
 
 This is how **Feedforward NNs** work. They are excellent for tasks where past knowledge is not needed, such as image classification (e.g., "Is this an orc or a dwarf?"). But they are utterly useless in understanding sequences.
 
-### **Example of a Simple [[Neural Network]] in Python (Legolas’ Arrow Shot)**
+### **Example of a Simple [[ML/Ml workflow/obsidian/Neural Networks]] in Python (Legolas’ Arrow Shot)**
 
 ```python
 import torch

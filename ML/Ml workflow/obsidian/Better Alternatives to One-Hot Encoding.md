@@ -125,7 +125,7 @@ print(train_data[['Embarked', 'Embarked_encoded']].head())
 
 ---
 
-### **4. [[Embedding]] (Using [[Neural Networks]])**
+### **4. [[Embedding]] (Using [[ML/Ml workflow/obsidian/Neural Networks|Neural Networks]])**
 
 If you’re working with **high-cardinality features** in deep learning models, embedding layers are a powerful solution. Instead of creating one-hot encodings, the model learns a **dense vector representation** for each category during training.
 
