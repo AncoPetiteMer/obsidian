@@ -85,8 +85,8 @@ Accuracy might look good (80%), but the model only caught **1 fraud** out of 2. 
 
 - A balanced metric that combines **Precision** and **Recall**.
 - Useful when you need to balance avoiding false positives and false negatives.
-- Formula: F1-Score=2⋅Precision⋅RecallPrecision+Recall\text{F1-Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}F1-Score=2⋅Precision+RecallPrecision⋅Recall​
-- Example: \text{F1-Score} = 2 \cdot \frac{1.0 \cdot 0.5}{1.0 + 0.5} = 0.67 \, \text{(67%)}
+- Formula: $\text{F1-Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$
+- Example: $\text{F1-Score} = 2 \cdot \frac{1.0 \cdot 0.5}{1.0 + 0.5} = 0.67$ , $\text{(67\%)}$
 
 ---
 
@@ -110,8 +110,10 @@ accuracy = accuracy_score(y_true, y_pred) precision = precision_score(y_true, y_
 ```
 **Output**:
 
+```python
+Confusion Matrix: [[3 0]  [1 1]] Accuracy: 0.80 Precision: 1.00 Recall: 0.50 F1-Score: 0.67
+```
 
-`Confusion Matrix: [[3 0]  [1 1]] Accuracy: 0.80 Precision: 1.00 Recall: 0.50 F1-Score: 0.67`
 
 ---
 
@@ -138,11 +140,18 @@ You can visualize the model's performance using precision-recall curves or ROC (
 
 #### **Precision-Recall Curve Example**:
 
-python
+```python
+`from sklearn.metrics import precision_recall_curve import matplotlib.pyplot as plt  # Predicted probabilities (for Class 1)
+y_scores = [0.1, 0.2, 0.4, 0.8, 0.05]  # Model's confidence for fraud
+# Precision-Recall Curve
+precision, recall, thresholds = precision_recall_curve(y_true, y_scores)
+plt.plot(recall, precision, marker='.')
+plt.title("Precision-Recall Curve")
+plt.xlabel("Recall")
+plt.ylabel("Precision") plt.show()`
+```
 
-CopierModifier
 
-`from sklearn.metrics import precision_recall_curve import matplotlib.pyplot as plt  # Predicted probabilities (for Class 1) y_scores = [0.1, 0.2, 0.4, 0.8, 0.05]  # Model's confidence for fraud  # Precision-Recall Curve precision, recall, thresholds = precision_recall_curve(y_true, y_scores) plt.plot(recall, precision, marker='.') plt.title("Precision-Recall Curve") plt.xlabel("Recall") plt.ylabel("Precision") plt.show()`
 
 ---
 
