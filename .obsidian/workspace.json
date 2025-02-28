@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/Performance Metrics.md",
+                "file": "ML/Ml workflow/obsidian/Neural Network.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,151 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Performance Metrics"
+              "title": "Neural Network"
+            }
+          },
+          {
+            "id": "1aaa4512fc00a1e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Global Max Pooling Layer.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Global Max Pooling Layer"
+            }
+          },
+          {
+            "id": "7f5855f49d477465",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Bidirectional GRU Layer.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Bidirectional GRU Layer"
+            }
+          },
+          {
+            "id": "43d0d9a25aaa46f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/GRU Layer.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "GRU Layer"
+            }
+          },
+          {
+            "id": "348c210e339d83b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/RNN.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "RNN"
+            }
+          },
+          {
+            "id": "c68381f82176ea0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Transformers.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Transformers"
+            }
+          },
+          {
+            "id": "c37b8d6a5f126597",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Neural Networks history.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Neural Networks history"
             }
           },
           {
@@ -103,7 +247,8 @@
               "title": "NLP glossary"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -156,8 +301,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -177,8 +321,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ML/Ml workflow/Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled.md",
-                "collapseAll": true,
+                "file": "ML/Ml workflow/obsidian/Neural Networks history.md",
+                "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
@@ -187,7 +331,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled"
+              "title": "Backlinks for Neural Networks history"
             }
           },
           {
@@ -196,12 +340,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ML/Machine Learning Workflow, general purpose.md",
+                "file": "ML/Ml workflow/obsidian/Neural Networks history.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Machine Learning Workflow, general purpose"
+              "title": "Outgoing links from Neural Networks history"
             }
           },
           {
@@ -272,18 +416,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "36c25d71bdd5e193",
+  "active": "5d2c8d6a0bcf5a81",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "ML/Ml workflow/obsidian/Transformers.md",
+    "ML/Ml workflow/obsidian/Neural Networks history.md",
+    "ML/Ml workflow/obsidian/RNN.md",
+    "ML/Ml workflow/obsidian/Neural Network.md",
+    "ML/Ml workflow/obsidian/Global Max Pooling Layer.md",
+    "ML/Ml workflow/obsidian/Bidirectional GRU Layer.md",
+    "ML/Ml workflow/obsidian/GRU Layer.md",
+    "ML/Ml workflow/obsidian/Padding.md",
+    "ML/Ml workflow/obsidian/Performance Metrics.md",
     "ML/Ml workflow/obsidian/Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled.md",
     "ML/Ml workflow/obsidian/Bootstrap Sampling.md",
     "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
     "ML/Ml workflow/obsidian/Dimensionality Reduction.md",
     "ML/Ml workflow/obsidian/NLP glossary.md",
     "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
-    "ML/Ml workflow/obsidian/Padding.md",
     "ML/Ml workflow/obsidian/Naïve Bayes.md",
     "ML/Ml workflow/obsidian/La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
-    "ML/Ml workflow/obsidian/Transformers.md",
     "ML/Ml workflow/obsidian/Optimizer.md",
     "ML/Ml workflow/obsidian/Usefull references.md",
     "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
@@ -292,14 +444,6 @@
     "ML/Ml workflow/obsidian/The Tale of the Fire Mage, Understanding Temperature and top P in Transformers.md",
     "ML/Ml workflow/obsidian/Gini Impurity.md",
     "ML/Ml workflow/obsidian/Random Forest.md",
-    "ML/Ml workflow/obsidian/Mathematical Foundations of Random Forests.md",
-    "ML/Ml workflow/obsidian/Activation Functions.md",
-    "ML/Ml workflow/obsidian/Hyperparameter Tuning.md",
-    "ML/Ml workflow/obsidian/Cross-Validation.md",
-    "ML/Ml workflow/obsidian/Machine Learning Workflow, general purpose.md",
-    "Embeddings.md",
-    "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
-    "ML/Ml workflow/obsidian/Embeddings.md",
     "Recording 20250130112529.webm",
     "ML/Ml workflow/obsidian/LICENSE",
     "ML/Ml workflow/obsidian",
