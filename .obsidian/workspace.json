@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
+                "file": "ML/Ml workflow/obsidian/Performance Metrics.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure"
+              "title": "Performance Metrics"
             }
           },
           {
@@ -135,7 +135,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "evalua",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,7 +156,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -273,13 +274,15 @@
   },
   "active": "36c25d71bdd5e193",
   "lastOpenFiles": [
+    "ML/Ml workflow/obsidian/Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled.md",
+    "ML/Ml workflow/obsidian/Bootstrap Sampling.md",
+    "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
     "ML/Ml workflow/obsidian/Dimensionality Reduction.md",
     "ML/Ml workflow/obsidian/NLP glossary.md",
     "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
     "ML/Ml workflow/obsidian/Padding.md",
     "ML/Ml workflow/obsidian/Naïve Bayes.md",
     "ML/Ml workflow/obsidian/La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
-    "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
     "ML/Ml workflow/obsidian/Transformers.md",
     "ML/Ml workflow/obsidian/Optimizer.md",
     "ML/Ml workflow/obsidian/Usefull references.md",
@@ -297,8 +300,6 @@
     "Embeddings.md",
     "ML/Ml workflow/obsidian/Standardization (Z-Score Scaling).md",
     "ML/Ml workflow/obsidian/Embeddings.md",
-    "ML/Ml workflow/obsidian/Neural Network.md",
-    "ML/Ml workflow/obsidian/Multi-Head Attention.md",
     "Recording 20250130112529.webm",
     "ML/Ml workflow/obsidian/LICENSE",
     "ML/Ml workflow/obsidian",

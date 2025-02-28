@@ -15,13 +15,13 @@ Imagine you’ve built a machine learning model to detect fraudulent transaction
 
 Your model is making predictions, but you need to evaluate whether it’s actually good at detecting fraud. Here’s the dataset after testing:
 
-|Transaction ID|Actual Class (True)|Predicted Class|
-|---|---|---|
-|1|0|0|
-|2|0|0|
-|3|1|0|
-|4|1|1|
-|5|0|0|
+| Transaction ID | Actual Class (True) | Predicted Class |
+| -------------- | ------------------- | --------------- |
+| 1              | 0                   | 0               |
+| 2              | 0                   | 0               |
+| 3              | 1                   | 0               |
+| 4              | 1                   | 1               |
+| 5              | 0                   | 0               |
 
 ---
 
@@ -29,7 +29,7 @@ Your model is making predictions, but you need to evaluate whether it’s actual
 
 To evaluate the model, we first create a **confusion matrix**:
 
-||Predicted: Fraud (1)|Predicted: Not Fraud (0)|
+|Predicted: Fraud (1)|Predicted: Not Fraud (0)|
 |---|---|---|
 |**Actual: Fraud (1)**|**True Positive (1)**|**False Negative (1)**|
 |**Actual: Not Fraud (0)**|**False Positive (0)**|**True Negative (3)**|
@@ -54,8 +54,8 @@ From the confusion matrix, we can calculate various performance metrics:
 #### **1. Accuracy**
 
 - Measures how often the model's predictions are correct.
-- Formula: Accuracy=TP+TNTotal Predictions\text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{Total Predictions}}Accuracy=Total PredictionsTP+TN​
-- Example: \text{Accuracy} = \frac{1 + 3}{5} = 0.8 \, \text{(80%)}
+- Formula: $\text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{Total Predictions}}$
+- Example: $\text{Accuracy} = \frac{1 + 3}{5} = 0.8$ , $\text{(80\%)}$
 
 #### **Why It’s Misleading for Imbalanced Data**:
 
@@ -67,8 +67,8 @@ Accuracy might look good (80%), but the model only caught **1 fraud** out of 2. 
 
 - Measures how many of the transactions predicted as fraud are actually fraud.
 - Focuses on avoiding **false positives** (flagging non-fraud as fraud).
-- Formula: Precision=TPTP+FP\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}Precision=TP+FPTP​
-- Example: \text{Precision} = \frac{1}{1 + 0} = 1.0 \, \text{(100%)}
+- Formula: $\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}$
+- Example: $\text{Precision} = \frac{1}{1 + 0} = 1.0$,  $\text{(100\%)}$
 
 ---
 
@@ -76,8 +76,8 @@ Accuracy might look good (80%), but the model only caught **1 fraud** out of 2. 
 
 - Measures how many of the actual fraud cases the model successfully caught.
 - Focuses on avoiding **false negatives** (missing fraud).
-- Formula: Recall=TPTP+FN\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}Recall=TP+FNTP​
-- Example: \text{Recall} = \frac{1}{1 + 1} = 0.5 \, \text{(50%)}
+- Formula: $\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$
+- Example: $\text{Recall} = \frac{1}{1 + 1} = 0.5$, $\text{(50\%)}$
 
 ---
 
