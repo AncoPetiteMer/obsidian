@@ -83,7 +83,9 @@ vectorizer = CountVectorizer() X = vectorizer.fit_transform(emails)
 Let's classify a new email: **"Win a free lottery ticket now"**.
 
 ```python
-new_email = ["Win a free lottery ticket now"] X_test = vectorizer.transform(new_email)  prediction = classifier.predict(X_test) print("Spam" if prediction[0] == 1 else "Not Spam")
+new_email = ["Win a free lottery ticket now"]
+X_test = vectorizer.transform(new_email)  
+prediction = classifier.predict(X_test) print("Spam" if prediction[0] == 1 else "Not Spam")
 ```
 
 

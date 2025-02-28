@@ -135,7 +135,7 @@ Let’s embark on a journey through this city and explore its districts, underst
 - **Deep [[Neural Networks]] (DNNs)** – Fully connected layers.
 - **Convolutional Neural Networks (CNNs)** – Image recognition (AlexNet, VGG, ResNet).
 - **Recurrent Neural Networks (RNNs)** – Sequence-based tasks (LSTMs, GRUs).
-- **[[Transformers]] (BERT, GPT, ViT)** – Advanced language and vision models.
+- **[[Transformers]] (BERT, GPT, ViT)** – Advanced language ([[NLP glossary]]) and vision models.
 
 🛠 **Example Use Cases:**
 
