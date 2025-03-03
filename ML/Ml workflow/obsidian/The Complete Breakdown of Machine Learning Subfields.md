@@ -40,7 +40,7 @@ Let’s embark on a journey through this city and explore its districts, underst
 
 - **Clustering (Grouping Similar Objects)**
     
-    - **[[k-Means]]** – Groups data into k clusters.
+    - **[[K-Means]]** – Groups data into k clusters.
     - **DBSCAN (Density-Based Spatial Clustering)** – Finds dense areas of data.
     - **Hierarchical Clustering** – Creates a tree-like structure of clusters.
 - **Dimensionality Reduction (Simplifying Complex Data)**
@@ -132,7 +132,7 @@ Let’s embark on a journey through this city and explore its districts, underst
 
 ### 🔑 **Key Algorithms:**
 
-- **Deep [[ML/Ml workflow/obsidian/Neural Networks|Neural Networks]] (DNNs)** – Fully connected layers.
+- **Deep [[Neural Networks|Neural Networks]] (DNNs)** – Fully connected layers.
 - **Convolutional Neural Networks (CNNs)** – Image recognition (AlexNet, VGG, ResNet).
 - **Recurrent Neural Networks (RNNs)** – Sequence-based tasks (LSTMs, GRUs).
 - **[[Transformers]] (BERT, GPT, ViT)** – Advanced language ([[NLP glossary]]) and vision models.

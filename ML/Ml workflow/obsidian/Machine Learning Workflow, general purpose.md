@@ -90,7 +90,7 @@ This workflow is a high-level guide to building, training, and evaluating machin
 
 ---
 
-### **Step 9: Build the [[ML/Ml workflow/obsidian/Neural Networks]]**
+### **Step 9: Build the [[Neural Networks]]**
 
 1. **Objective**:
     - Design a neural network architecture tailored to the problem.

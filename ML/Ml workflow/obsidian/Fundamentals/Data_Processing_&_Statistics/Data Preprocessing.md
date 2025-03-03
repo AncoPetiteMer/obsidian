@@ -185,7 +185,7 @@ print(y_train_tensor)
 
 ---
 
-### **Step 4: Feeding Preprocessed Data into a [[ML/Ml workflow/obsidian/Neural Networks]]**
+### **Step 4: Feeding Preprocessed Data into a [[Neural Networks]]**
 
 Here’s how the preprocessed data fits into a PyTorch model:
 ```python

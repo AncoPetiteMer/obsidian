@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/Transformers.md",
+                "file": "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,79 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Transformers"
+              "title": "Data Cleaning"
+            }
+          },
+          {
+            "id": "c6ae98c6b8395837",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Neural Networks history"
+            }
+          },
+          {
+            "id": "b7d0d8afcb0d0432",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/Multi-Head Attention.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Multi-Head Attention"
+            }
+          },
+          {
+            "id": "762e03b1ab7d2317",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Training_Parameters/Dropout for Regularization.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Dropout for Regularization"
             }
           },
           {
@@ -55,7 +127,8 @@
               "title": "NLP glossary"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -87,7 +160,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "evalua",
+                "query": "optimizer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,7 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 393.5
   },
   "right": {
     "id": "d1bb4bb1cc57db9d",
@@ -223,42 +296,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c37b8d6a5f126597",
+  "active": "50dbffc22e576d4d",
   "lastOpenFiles": [
-    "ML/Ml workflow/obsidian/Transformers.md",
-    "ML/Ml workflow/obsidian/Neural Networks history.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Training_Parameters/Early Stopping.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/Activation Functions.md",
+    "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/Bootstrap Sampling.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Training_Parameters",
+    "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/Handling Outliers.md",
+    "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/PCA.md",
+    "ML/Ml workflow/obsidian/Overfitting and Underfitting.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/RNN.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/Transformers.md",
+    "ML/Ml workflow/obsidian/Workflow & Projects/Case_Studies",
+    "ML/Ml workflow/obsidian/Workflow & Projects/General_Workflow",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/Multi-Head Attention.md",
+    "ML/Ml workflow/obsidian/Models.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Neural_Networks/Neural Networks.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
+    "ML/Ml workflow/obsidian/Machine_Learning_Algorithms/Traditional_Models/K-Means.md",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Regularization_&_Optimization",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Neural_Networks",
+    "ML/Ml workflow/obsidian/Machine_Learning_Algorithms/Ensemble_Methods",
+    "ML/Ml workflow/obsidian/Fundamentals/Mathematical_Foundations/Gini Impurity.md",
+    "ML/Ml workflow/obsidian/Machine_Learning_Algorithms/Traditional_Models",
+    "ML/Ml workflow/obsidian/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
+    "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/Data Preprocessing.md",
+    "ML/Ml workflow/obsidian/Fundamentals/Mathematical_Foundations",
+    "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
+    "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics",
     "ML/Ml workflow/obsidian/NLP glossary.md",
     "Neural Networks.md",
     "ML/Ml workflow/obsidian/The Complete Breakdown of Machine Learning Subfields.md",
     "ML/Ml workflow/obsidian/Better Alternatives to One-Hot Encoding.md",
-    "ML/Ml workflow/obsidian/Neural Networks.md",
     "ML/Ml workflow/obsidian/Global Max Pooling Layer.md",
-    "ML/Ml workflow/obsidian/Eigenvalues & Eigenvectors.md",
+    "ML/Ml workflow/obsidian/Fundamentals/Mathematical_Foundations/Eigenvalues & Eigenvectors.md",
     "ML/Ml workflow/obsidian/Dimensionality Reduction.md",
     "ML/Ml workflow/obsidian/Padding.md",
-    "ML/Ml workflow/obsidian/GRU Layer.md",
-    "ML/Ml workflow/obsidian/Bidirectional GRU Layer.md",
-    "ML/Ml workflow/obsidian/RNN.md",
-    "ML/Ml workflow/obsidian/Performance Metrics.md",
-    "ML/Ml workflow/obsidian/Building a Fraud Detection System. A Journey Through Machine Learning, Neural Networks, and Real-World ChallengesUntitled.md",
-    "ML/Ml workflow/obsidian/Bootstrap Sampling.md",
-    "ML/Ml workflow/obsidian/The Reinforcement Learning Quest, From Novice to Mastery in an Epic Adventure.md",
-    "ML/Ml workflow/obsidian/Naïve Bayes.md",
-    "ML/Ml workflow/obsidian/La Quête Épique vers DeepSeek-R1, Maîtriser l'Apprentissage par Renforcement.md",
-    "ML/Ml workflow/obsidian/Optimizer.md",
-    "ML/Ml workflow/obsidian/Usefull references.md",
-    "ML/Ml workflow/obsidian/Eigenvalues and eigenvectors (linear algebra).md",
-    "ML/Ml workflow/obsidian/Embedding.md",
-    "ML/Ml workflow/obsidian/SVM.md",
-    "ML/Ml workflow/obsidian/The Tale of the Fire Mage, Understanding Temperature and top P in Transformers.md",
-    "Recording 20250130112529.webm",
-    "ML/Ml workflow/obsidian/LICENSE",
-    "ML/Ml workflow/obsidian",
-    "Obsidian/LICENSE",
-    "Obsidian",
-    "ML/Ml workflow",
+    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/GRU Layer.md",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "ML"
+    "Untitled.canvas"
   ]
 }
