@@ -85,9 +85,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Ml workflow/obsidian/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
+                "file": "README.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "The Reinforcement Learning for Deepseek r1"
+              "title": "README"
             }
           },
           {
@@ -296,13 +296,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50dbffc22e576d4d",
+  "active": "762e03b1ab7d2317",
   "lastOpenFiles": [
+    "ML/Ml workflow/obsidian/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
     "ML/Ml workflow/obsidian/Reinforcement_Learning",
     "ML/Ml workflow/obsidian/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
     "ML/Ml workflow/obsidian/Machine_Learning_Algorithms/Models.md",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Training/Training Loop.md",
-    "ML/Ml workflow/obsidian/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Training/Loss Function.md",
     "ML/Ml workflow/obsidian/Machine_Learning_Algorithms/Machine Learning Subfields.md",
     "ML/Ml workflow/obsidian/Workflow & Projects/Case_Studies/Titanic Survival Prediction Story 🚢🌲.md",
@@ -333,7 +333,6 @@
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Regularization_&_Optimization",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures",
-    "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Neural_Networks",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
