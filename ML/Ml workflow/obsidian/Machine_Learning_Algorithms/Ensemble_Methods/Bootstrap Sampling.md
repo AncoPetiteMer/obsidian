@@ -7,7 +7,7 @@ Bootstrap sampling is a powerful statistical technique used in machine learning 
 **Bootstrap sampling** is a technique where we randomly draw samples **with replacement** from a dataset to create multiple subsets. It is commonly used to:
 
 - **Estimate statistics** (e.g., mean, variance, confidence intervals) when the dataset is small.
-- **Create diverse datasets** for ensemble learning methods like **[[Random Forest]]**([[Understanding Random Forest with a Titanic Survival Prediction Story 🚢🌲]])
+- **Create diverse datasets** for ensemble learning methods like **[[Random Forest]]**([[Titanic Survival Prediction Story 🚢🌲]])
 
 ---
 
