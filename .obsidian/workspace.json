@@ -80,30 +80,6 @@
             }
           },
           {
-            "id": "762e03b1ab7d2317",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
             "id": "f3e9b6590f496a67",
             "type": "leaf",
             "state": {
@@ -128,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -296,8 +272,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "762e03b1ab7d2317",
+  "active": "b7d0d8afcb0d0432",
   "lastOpenFiles": [
+    "README.md",
     "ML/Ml workflow/obsidian/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
     "ML/Ml workflow/obsidian/Reinforcement_Learning",
     "ML/Ml workflow/obsidian/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
@@ -316,7 +293,6 @@
     "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/Dropout for Regularization.md",
     "ML/Ml workflow/obsidian/Special Topics & Techniques/Feature_Engineering_and_Scaling",
-    "README.md",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Training/Early Stopping.md",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Layers_&_Architectures/Activation Functions.md",
     "ML/Ml workflow/obsidian/Machine_Learning_Algorithms/Ensemble_Methods/Bootstrap Sampling.md",
