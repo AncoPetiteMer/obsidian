@@ -31,7 +31,7 @@ This workflow is a high-level guide to building, training, and evaluating machin
 2. **Key Actions**:
     - Use [[EDA]] techniques to explore feature distributions, correlations, and relationships.
     - Visualize data with histograms, scatter plots, and heatmaps ([[Visualization Techniques]]).
-    - Identify missing values, outliers ([[Handling Outliers]]), and imbalanced classes ([[Class Imbalance Handling]]).
+    - Identify missing values, outliers ([[Outliers]]), and imbalanced classes ([[Class Imbalance]]).
 
 ---
 
@@ -41,7 +41,7 @@ This workflow is a high-level guide to building, training, and evaluating machin
     - Prepare the dataset by addressing quality issues.
 2. **Key Actions**:
     - Handle missing values by applying imputation or placeholders ([[Data Cleaning]]).
-    - Remove extreme outliers based on statistical thresholds ([[Handling Outliers]]).
+    - Remove extreme outliers based on statistical thresholds ([[Outliers]]).
     - Eliminate irrelevant or redundant features.
 
 ---
@@ -73,7 +73,7 @@ This workflow is a high-level guide to building, training, and evaluating machin
 1. **Objective**:
     - Address datasets where one class is underrepresented.
 2. **Key Actions**:
-    - Apply [[Class Imbalance Handling]] methods like SMOTE (Synthetic Minority Oversampling Technique).
+    - Apply [[Class Imbalance]] methods like SMOTE (Synthetic Minority Oversampling Technique).
     - Use weighted loss functions or undersample the majority class.
     - Prioritize metrics like recall and F1-score for imbalanced datasets.
 

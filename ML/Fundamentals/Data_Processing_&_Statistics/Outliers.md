@@ -54,11 +54,33 @@ Before handling outliers, you need to detect them. Common methods include:
 
 #### **Python Example: Detecting Outliers with IQR**
 
-python
+```python
+import pandas as pd
 
-CopierModifier
+# Dataset
+data = {
+    "House Size (sqft)": [1500, 2000, 2500, 100000],
+    "Price ($)": [300000, 400000, 500000, 10000000]
+}
+df = pd.DataFrame(data)
 
-`import pandas as pd  # Dataset data = {"House Size (sqft)": [1500, 2000, 2500, 100000],         "Price ($)": [300000, 400000, 500000, 10000000]} df = pd.DataFrame(data)  # Calculate IQR q1 = df["House Size (sqft)"].quantile(0.25) q3 = df["House Size (sqft)"].quantile(0.75) iqr = q3 - q1  # Interquartile Range  # Define the bounds for outliers lower_bound = q1 - 1.5 * iqr upper_bound = q3 + 1.5 * iqr  # Identify outliers outliers = df[(df["House Size (sqft)"] < lower_bound) | (df["House Size (sqft)"] > upper_bound)] print("Outliers:") print(outliers)`
+# Calculate IQR
+q1 = df["House Size (sqft)"].quantile(0.25)
+q3 = df["House Size (sqft)"].quantile(0.75)
+iqr = q3 - q1  # Interquartile Range
+
+# Define the bounds for outliers
+lower_bound = q1 - 1.5 * iqr
+upper_bound = q3 + 1.5 * iqr
+
+# Identify outliers
+outliers = df[(df["House Size (sqft)"] < lower_bound) | (df["House Size (sqft)"] > upper_bound)]
+
+print("Outliers:")
+print(outliers)
+
+```
+
 
 **Output**:
 
@@ -81,11 +103,15 @@ Once you’ve identified outliers, you have several options:
 - If the outliers are clearly errors or irrelevant, you can simply remove them.
 - Be cautious—don’t remove outliers that represent meaningful data (e.g., rare but valid events like fraud).
 
-python
+```python
+# Remove outliers
+df_cleaned = df[(df["House Size (sqft)"] >= lower_bound) & (df["House Size (sqft)"] <= upper_bound)]
 
-CopierModifier
+print("Dataset After Removing Outliers:")
+print(df_cleaned)
 
-`# Remove outliers df_cleaned = df[(df["House Size (sqft)"] >= lower_bound) & (df["House Size (sqft)"] <= upper_bound)] print("Dataset After Removing Outliers:") print(df_cleaned)`
+```
+
 
 ---
 
@@ -94,11 +120,15 @@ CopierModifier
 - Replace extreme values with the nearest valid boundary.
 - This keeps the data but limits the influence of outliers.
 
-python
+```python
+# Cap outliers
+df["House Size (sqft)"] = df["House Size (sqft)"].clip(lower=lower_bound, upper=upper_bound)
 
-CopierModifier
+print("Dataset After Capping Outliers:")
+print(df)
 
-`# Cap outliers df["House Size (sqft)"] = df["House Size (sqft)"].clip(lower=lower_bound, upper=upper_bound) print("Dataset After Capping Outliers:") print(df)`
+```
+
 
 ---
 
@@ -107,11 +137,17 @@ CopierModifier
 - Apply transformations (e.g., log transformation) to reduce the impact of outliers.
 - This can make the data more manageable for machine learning models.
 
-python
+```python
+import numpy as np
 
-CopierModifier
+# Apply log transformation
+df["House Size (sqft)"] = np.log1p(df["House Size (sqft)"])  # log1p handles zeros
 
-`import numpy as np  # Apply log transformation df["House Size (sqft)"] = np.log1p(df["House Size (sqft)"])  # log1p handles zeros print("Dataset After Log Transformation:") print(df)`
+print("Dataset After Log Transformation:")
+print(df)
+
+```
+
 
 ---
 
@@ -128,19 +164,30 @@ Visualizations can help you understand and communicate the presence of outliers.
 
 #### **Boxplot Example**
 
-python
+```python
+import matplotlib.pyplot as plt
 
-CopierModifier
+# Plot a boxplot
+plt.boxplot(df["House Size (sqft)"], vert=False)
+plt.title("Boxplot of House Sizes")
+plt.xlabel("House Size (sqft)")
+plt.show()
 
-`import matplotlib.pyplot as plt  # Plot a boxplot plt.boxplot(df["House Size (sqft)"], vert=False) plt.title("Boxplot of House Sizes") plt.xlabel("House Size (sqft)") plt.show()`
+```
+
 
 #### **Scatter Plot Example**
 
-python
+```python
+# Scatter plot of house size vs price
+plt.scatter(df["House Size (sqft)"], df["Price ($)"], color='blue')
+plt.title("Scatter Plot: House Size vs Price")
+plt.xlabel("House Size (sqft)")
+plt.ylabel("Price ($)")
+plt.show()
 
-CopierModifier
+```
 
-`# Scatter plot of house size vs price plt.scatter(df["House Size (sqft)"], df["Price ($)"], color='blue') plt.title("Scatter Plot: House Size vs Price") plt.xlabel("House Size (sqft)") plt.ylabel("Price ($)") plt.show()`
 
 ---
 

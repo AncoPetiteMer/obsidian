@@ -16,7 +16,7 @@ Together, **they form an unbeatable duo**, each providing insights from opposite
 
 ---
 
-### 🧠 **[[GRU Layer]]: The Forgetful but Efficient Spy**
+### 🧠 **[[GRU]]: The Forgetful but Efficient Spy**
 
 Before we add bidirectionality, let’s understand a **GRU (Gated Recurrent Unit)**. Think of a spy with **two special gadgets**:
 

@@ -1,15 +1,14 @@
 - **Tokenization**: Breaking down text into individual units, such as words or sentences.
     
     _Example_:
-    
-    ```python
+
+```python
 from nltk.tokenize import word_tokenize
 text = "Hello, world!"
 tokens = word_tokenize(text) print(tokens)  
 # Output: ['Hello', ',', 'world', '!']
 ```
     
-    ``
     
 - **Stop Words**: Commonly used words (e.g., 'and', 'the') that are often removed from text to focus on meaningful content.
     
@@ -24,7 +23,6 @@ filtered_words = [word for word in words if word.lower() not in stop_words] prin
 # Output: ['This', 'sample', 'sentence', '.']
 ```
     
-    ``
     
 - **Stemming**: Reducing words to their root form.
     
@@ -37,8 +35,6 @@ stems = [stemmer.stem(word) for word in words] print(stems)
 # Output: ['run', 'ran', 'run']
 ```
     
-    ``
-    
 - **Lemmatization**: Converting words to their base or dictionary form.
     
     _Example_:
@@ -48,7 +44,6 @@ lemmatizer = WordNetLemmatizer()
 words = ["running", "ran", "runs"]
 lemmas = [lemmatizer.lemmatize(word, pos='v') for word in words] print(lemmas)  # Output: ['run', 'run', 'run']
 ```
-    ``
     
 - **Part-of-Speech Tagging (POS Tagging)**: Identifying the grammatical role of words in a sentence.
     

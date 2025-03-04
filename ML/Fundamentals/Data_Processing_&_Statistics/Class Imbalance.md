@@ -48,18 +48,24 @@ Here, `Fraudulent` (Class 1) is very rare compared to `Non-Fraudulent` (Class 0)
 
 The first step is to check the class distribution:
 
-python
+```python
+import pandas as pd
 
-CopierModifier
+# Sample dataset
+data = {
+    'Transaction ID': [1, 2, 3, 4, 5],
+    'Amount': [100, 20, 500, 10, 1000],
+    'Fraudulent': [0, 0, 0, 1, 0]
+}
+df = pd.DataFrame(data)
 
-`import pandas as pd  # Sample dataset data = {'Transaction ID': [1, 2, 3, 4, 5],         'Amount': [100, 20, 500, 10, 1000],         'Fraudulent': [0, 0, 0, 1, 0]} df = pd.DataFrame(data)  # Check class distribution print(df['Fraudulent'].value_counts(normalize=True))`
+# Check class distribution
+print(df['Fraudulent'].value_counts(normalize=True))
+
+```
+
 
 **Output**:
-
-yaml
-
-CopierModifier
-
 `0    0.80 1    0.20 Name: Fraudulent, dtype: float64`
 
 Here, 80% of transactions are non-fraudulent (`Class 0`), while only 20% are fraudulent (`Class 1`). In real datasets, the imbalance is often much worse (e.g., 99.9% vs. 0.1%).
@@ -81,16 +87,23 @@ Here, 80% of transactions are non-fraudulent (`Class 0`), while only 20% are fra
 
 #### **Python Example: SMOTE**
 
-python
+```python
+from imblearn.over_sampling import SMOTE
 
-CopierModifier
+# Features (X) and target (y)
+X = df[['Amount']]
+y = df['Fraudulent']
 
-`from imblearn.over_sampling import SMOTE  # Features (X) and target (y) X = df[['Amount']] y = df['Fraudulent']  # Apply SMOTE to oversample the minority class smote = SMOTE(random_state=42) X_resampled, y_resampled = smote.fit_resample(X, y)  # Check new class distribution print(pd.Series(y_resampled).value_counts())`
+# Apply SMOTE to oversample the minority class
+smote = SMOTE(random_state=42)
+X_resampled, y_resampled = smote.fit_resample(X, y)
+
+# Check new class distribution
+print(pd.Series(y_resampled).value_counts())
+
+```
 
 **Output**:
-
-CopierModifier
-
 `1    4 0    4`
 
 Now the dataset has an equal number of fraud (Class 1) and non-fraud (Class 0) samples.
@@ -103,18 +116,24 @@ Instead of resampling, you can adjust the model to "care more" about the minorit
 
 #### **Python Example: Weighted Loss**
 
-python
+```python
+from sklearn.utils.class_weight import compute_class_weight
+import numpy as np
 
-CopierModifier
+# Compute class weights
+class_weights = compute_class_weight('balanced', classes=np.unique(y), y=y)
+print("Class Weights:", class_weights)
 
-`from sklearn.utils.class_weight import compute_class_weight import numpy as np  # Compute class weights class_weights = compute_class_weight('balanced', classes=np.unique(y), y=y) print("Class Weights:", class_weights)  # Apply class weights to a PyTorch loss function import torch.nn as nn weights = torch.tensor(class_weights, dtype=torch.float32) loss_fn = nn.CrossEntropyLoss(weight=weights)`
+# Apply class weights to a PyTorch loss function
+import torch.nn as nn
+
+weights = torch.tensor(class_weights, dtype=torch.float32)
+loss_fn = nn.CrossEntropyLoss(weight=weights)
+
+```
+
 
 **Output**:
-
-less
-
-CopierModifier
-
 `Class Weights: [0.5  2.0]`
 
 Here, the model will penalize errors on fraud cases (Class 1) **4 times more** than non-fraud cases.
@@ -145,18 +164,25 @@ For imbalanced datasets, accuracy is not a good metric. Instead, focus on:
 
 #### **Python Example: Evaluate Metrics**
 
-python
+```python
+from sklearn.metrics import precision_score, recall_score, f1_score
 
-CopierModifier
+# Assume these are the model predictions
+y_true = [0, 0, 0, 1, 0]  # Actual labels
+y_pred = [0, 0, 0, 0, 0]  # Predicted labels (model predicted everything as 0)
 
-`from sklearn.metrics import precision_score, recall_score, f1_score  # Assume these are the model predictions y_true = [0, 0, 0, 1, 0]  # Actual labels y_pred = [0, 0, 0, 0, 0]  # Predicted labels (model predicted everything as 0)  # Calculate metrics precision = precision_score(y_true, y_pred) recall = recall_score(y_true, y_pred) f1 = f1_score(y_true, y_pred)  print(f"Precision: {precision:.2f}") print(f"Recall: {recall:.2f}") print(f"F1-Score: {f1:.2f}")`
+# Calculate metrics
+precision = precision_score(y_true, y_pred)
+recall = recall_score(y_true, y_pred)
+f1 = f1_score(y_true, y_pred)
+
+print(f"Precision: {precision:.2f}")
+print(f"Recall: {recall:.2f}")
+print(f"F1-Score: {f1:.2f}")
+
+```
 
 **Output**:
-
-makefile
-
-CopierModifier
-
 `Precision: 0.00 Recall: 0.00 F1-Score: 0.00`
 
 Here, the model failed completely because it predicted only the majority class (Class 0). Precision, Recall, and F1-Score highlight this failure, even though accuracy might have been high.

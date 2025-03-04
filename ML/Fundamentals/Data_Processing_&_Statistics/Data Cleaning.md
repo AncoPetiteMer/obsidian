@@ -5,8 +5,8 @@ Imagine you’re organizing a garage sale. You open your storage room and find a
 In data science, **Data Cleaning** is exactly like organizing your garage sale. Before building a machine learning model, you must make sure your data is clean, consistent, and ready to use. Raw data often comes with issues:
 
 - Some data might be **missing**.
-- Some data might be **outliers** (extreme or incorrect values).
-- Some features might need to be **standardized or normalized** so they’re easier to work with.
+- Some data might be **[[Outliers]]** (extreme or incorrect values).
+- Some features might need to be **standardized  ([[Standardization (Z-Score Scaling)]]) or normalized** so they’re easier to work with.
 
 Without cleaning your data, your model will struggle to make accurate predictions—just like a messy garage sale wouldn’t attract many buyers!
 
@@ -53,11 +53,39 @@ You can:
 
 #### **Python Example**:
 
-python
+```python
+import pandas as pd
 
-CopierModifier
+# Create a messy dataset
+data = {
+    "House Size (sqft)": [1500, None, 2000, 100000, 1800],
+    "Number of Rooms": [3, 4, None, 3, 5],
+    "Price ($)": [300000, 400000, None, 250000, 500000],
+    "Year Built": [2005, 2010, 2000, None, 2015],
+}
+df = pd.DataFrame(data)
 
-`import pandas as pd  # Create a messy dataset data = {     "House Size (sqft)": [1500, None, 2000, 100000, 1800],     "Number of Rooms": [3, 4, None, 3, 5],     "Price ($)": [300000, 400000, None, 250000, 500000],     "Year Built": [2005, 2010, 2000, None, 2015], } df = pd.DataFrame(data)  # Print the dataset before cleaning print("Original Dataset:") print(df)  # Handle missing values: # Replace missing "House Size" and "Price" with the median df['House Size (sqft)'].fillna(df['House Size (sqft)'].median(), inplace=True) df['Price ($)'].fillna(df['Price ($)'].median(), inplace=True)  # Replace missing "Number of Rooms" with the mode (most common value) df['Number of Rooms'].fillna(df['Number of Rooms'].mode()[0], inplace=True)  # Drop rows where "Year Built" is missing df.dropna(subset=['Year Built'], inplace=True)  # Print the cleaned dataset print("\nCleaned Dataset:") print(df)`
+# Print the dataset before cleaning
+print("Original Dataset:")
+print(df)
+
+# Handle missing values:
+# Replace missing "House Size" and "Price" with the median
+df['House Size (sqft)'].fillna(df['House Size (sqft)'].median(), inplace=True)
+df['Price ($)'].fillna(df['Price ($)'].median(), inplace=True)
+
+# Replace missing "Number of Rooms" with the mode (most common value)
+df['Number of Rooms'].fillna(df['Number of Rooms'].mode()[0], inplace=True)
+
+# Drop rows where "Year Built" is missing
+df.dropna(subset=['Year Built'], inplace=True)
+
+# Print the cleaned dataset
+print("\nCleaned Dataset:")
+print(df)
+
+```
+
 
 ---
 
@@ -76,11 +104,22 @@ Outliers are extreme values that don’t make sense or don’t belong in the dat
 
 #### **Python Example**:
 
-python
+```python
+# Cap the outlier in "House Size"
+q1, q3 = df['House Size (sqft)'].quantile([0.25, 0.75])  # Calculate quartiles
+iqr = q3 - q1  # Calculate interquartile range
+lower_bound = q1 - 1.5 * iqr
+upper_bound = q3 + 1.5 * iqr
 
-CopierModifier
+# Replace outliers with the upper bound
+df['House Size (sqft)'] = df['House Size (sqft)'].clip(lower=lower_bound, upper=upper_bound)
 
-`# Cap the outlier in "House Size" q1, q3 = df['House Size (sqft)'].quantile([0.25, 0.75])  # Calculate quartiles iqr = q3 - q1  # Calculate interquartile range lower_bound = q1 - 1.5 * iqr upper_bound = q3 + 1.5 * iqr  # Replace outliers with the upper bound df['House Size (sqft)'] = df['House Size (sqft)'].clip(lower=lower_bound, upper=upper_bound)  # Print the dataset after handling outliers print("\nDataset After Handling Outliers:") print(df)`
+# Print the dataset after handling outliers
+print("\nDataset After Handling Outliers:")
+print(df)
+
+```
+
 
 ---
 
@@ -97,11 +136,19 @@ Imagine one feature (like "House Size") ranges from 500 to 10,000, while another
 
 #### **Python Example**:
 
-python
+```python
+from sklearn.preprocessing import StandardScaler
 
-CopierModifier
+# Standardize numerical columns
+scaler = StandardScaler()
+df[['House Size (sqft)', 'Price ($)']] = scaler.fit_transform(df[['House Size (sqft)', 'Price ($)']])
 
-`from sklearn.preprocessing import StandardScaler  # Standardize numerical columns scaler = StandardScaler() df[['House Size (sqft)', 'Price ($)']] = scaler.fit_transform(df[['House Size (sqft)', 'Price ($)']])  # Print the scaled dataset print("\nDataset After Scaling:") print(df)`
+# Print the scaled dataset
+print("\nDataset After Scaling:")
+print(df)
+
+```
+
 
 ---
 

@@ -170,7 +170,7 @@ This defines a single-layer LSTM taking 10-dimensional inputs and producing a 20
 
 However, LSTMs aren’t the only enhanced RNN in town. A slightly leaner variant arrived around 2014: the GRU.
 
-## Gated Recurrent Units ([[GRU Layer]]s) – LSTM’s Leaner Cousin
+## Gated Recurrent Units ([[GRU]]s) – LSTM’s Leaner Cousin
 
 The **Gated Recurrent Unit (GRU)**, introduced by Cho _et al._ in 2014, is essentially a simplified LSTM. Think of GRU as LSTM’s cousin who decided to “travel light” by packing fewer gates. GRUs have only two gates: a **reset gate** $r_t$ and an **update gate** $z_t$ (sometimes called the forget gate, as it plays a similar role). It combines the input and forget gates of the LSTM into one “update” gate, and it merges the cell state and hidden state into a single state $h_t$.
 

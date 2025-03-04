@@ -33,9 +33,9 @@ Let’s say "Location" contains `Downtown`, `Suburban`, and `Rural`. These are c
 
 #### **Python Example**:
 
-python
+```python
 
-CopierModifier
+```
 
 `import pandas as pd  # Original dataset data = {     'House Size (sqft)': [1500, 2000, 1200, 2500],     'Number of Rooms': [3, 4, 2, 5],     'Location': ['Downtown', 'Suburban', 'Downtown', 'Rural'],     'Price ($)': [300000, 400000, 250000, 350000], } df = pd.DataFrame(data)  # One-Hot Encode the "Location" column df = pd.get_dummies(df, columns=['Location'], drop_first=True)  # Avoid multicollinearity print(df)`
 
@@ -61,10 +61,9 @@ Sometimes, combining two features creates a new feature that is more powerful. F
 - **Price per Square Foot**: A bigger house doesn’t necessarily mean it’s expensive. What if you divide `Price` by `House Size` to measure the price per square foot?
 
 #### **Python Example**:
+```python
 
-python
-
-CopierModifier
+```
 
 `# Create a new feature: Price per Square Foot df['Price_per_sqft'] = df['Price ($)'] / df['House Size (sqft)'] print(df)`
 
@@ -101,10 +100,9 @@ Instead of using the raw date, you can extract:
 - **Day of Week**: Are houses listed on weekends more likely to sell faster?
 
 #### **Python Example**:
+```python
 
-python
-
-CopierModifier
+```
 
 `# Add a date column df['Date Listed'] = ['2023-01-15', '2022-06-10', '2023-03-05', '2021-11-20'] df['Date Listed'] = pd.to_datetime(df['Date Listed'])  # Extract new time-based features df['Year'] = df['Date Listed'].dt.year df['Month'] = df['Date Listed'].dt.month df['Day_of_Week'] = df['Date Listed'].dt.dayofweek print(df[['Date Listed', 'Year', 'Month', 'Day_of_Week']])`
 
@@ -129,10 +127,9 @@ Sometimes, relationships between features are not linear. For example:
 - You can create **polynomial features** to capture these non-linear relationships.
 
 #### **Python Example**:
+```python
 
-python
-
-CopierModifier
+```
 
 `from sklearn.preprocessing import PolynomialFeatures  # Add polynomial features for "House Size" poly = PolynomialFeatures(degree=2, include_bias=False) house_size_poly = poly.fit_transform(df[['House Size (sqft)']]) df['House Size^2'] = house_size_poly[:, 1]  # Add squared term print(df[['House Size (sqft)', 'House Size^2']])`
 

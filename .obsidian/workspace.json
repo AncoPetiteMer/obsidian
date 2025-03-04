@@ -23,8 +23,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Evaluation/Overfitting and Underfitting.md",
-                "mode": "source",
+                "file": "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance.md",
+                "mode": "preview",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -38,7 +38,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Overfitting and Underfitting"
+              "title": "Class Imbalance"
+            }
+          },
+          {
+            "id": "e8a7b5068d25c254",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Feature Scaling"
             }
           },
           {
@@ -66,7 +90,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -139,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ML/Ml workflow/obsidian/Transformers.md",
+                "file": "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +173,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Transformers"
+              "title": "Backlinks for Feature Scaling"
             }
           },
           {
@@ -217,12 +241,12 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,36 +258,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c6ae98c6b8395837",
+  "active": "e8a7b5068d25c254",
   "lastOpenFiles": [
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Engineering.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Dimensionality Reduction.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Standardization (Z-Score Scaling).md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Bootstrap Sampling.md",
+    "ML/Machine_Learning_Algorithms/Ensemble_Methods/Ensemble Learning.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Outliers.md",
+    "ML/Natural_Language_Processing/NLP glossary.md",
+    "ML/Natural_Language_Processing/Padding.md",
+    "ML/Natural_Language_Processing/Embedding.md",
+    "ML/Layers_&_Architectures/GRU.md",
+    "ML/Layers_&_Architectures/Global Max Pooling.md",
+    "ML/Layers_&_Architectures/Bidirectional GRU.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Data Preprocessing.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/EDA.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Visualization Techniques.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/PCA.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Better Alternatives to One-Hot Encoding.md",
+    "ML/Evaluation/Overfitting and Underfitting.md",
     "ML/Evaluation/Cross-Validation.md",
     "ML/Machine_Learning_Algorithms/Traditional_Models/SVM.md",
     "ML/Machine_Learning_Algorithms/Traditional_Models/Random Forest.md",
     "ML/Machine_Learning_Algorithms/Traditional_Models/Naïve Bayes.md",
     "ML/Machine_Learning_Algorithms/Traditional_Models/K-Means.md",
-    "ML/Layers_&_Architectures/Global Max Pooling Layer.md",
-    "README.md",
-    "ML/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/PCA.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance Handling.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Data Preprocessing.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/EDA.md",
-    "ML/Layers_&_Architectures/Activation Functions.md",
-    "ML/Layers_&_Architectures/Bidirectional GRU Layer.md",
-    "ML/Layers_&_Architectures/Dropout for Regularization.md",
-    "ML/Layers_&_Architectures/Multi-Head Attention.md",
-    "ML/Usefull references.md",
     "LICENSE",
-    "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
     "ML/Reinforcement_Learning",
-    "ML/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
-    "ML/Machine_Learning_Algorithms/Models.md",
-    "ML/Deep Learning & Neural Networks/Training/Training Loop.md",
-    "ML/Deep Learning & Neural Networks/Training/Loss Function.md",
-    "ML/Machine_Learning_Algorithms/Machine Learning Subfields.md",
-    "ML/Workflow & Projects/Case_Studies/Titanic Survival Prediction Story 🚢🌲.md",
-    "ML/Ml workflow/obsidian/DeepSeek-R1, RL.md",
     "ML/Evaluation",
     "ML/Natural_Language_Processing",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering",

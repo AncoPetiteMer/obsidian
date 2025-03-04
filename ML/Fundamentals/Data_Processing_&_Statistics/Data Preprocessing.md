@@ -228,7 +228,7 @@ for epoch in range(100):  # 100 epochs
 
 ---
 
-### **Why is [[Data Preprocessing]] Important?**
+### **Why is data Preprocessing Important?**
 
 Without preprocessing:
 

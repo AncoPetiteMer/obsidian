@@ -47,7 +47,7 @@ Larger embedding dimensions increase both **memory usage** and **computational c
 - If a **Netflix recommendation system** assigns **256-dimensional embeddings** to each of its **200 million users**, the storage requirements would be massive.
 - Instead, Netflix engineers may find that a **32-dimensional embedding** provides sufficient personalization while keeping the system scalable.
 
-### **3️⃣ Generalization (Avoiding Overfitting)**
+### **3️⃣ Generalization (Avoiding Overfitting ([[Overfitting and Underfitting]]))**
 
 Smaller embeddings encourage the model to **generalize** rather than memorize. If embeddings are too large, they might **overfit** by storing **too much specific information**, making the model perform poorly on new data.
 
