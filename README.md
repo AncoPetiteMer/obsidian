@@ -10,8 +10,9 @@ This repository serves as:
 
 ## ❗Disclaimer 
 
-Please note that this repository incorporates a significant amount of AI-generated content. While every effort has been made to review and verify the material, not all content has undergone thorough proofreading. Consequently, there may be occasional code errors, inaccuracies, or hallucinations in the content. Users are encouraged to verify and test the information before using it in critical applications.
-This repository is a continuous work in progress intended for my personal learning journey and will evolve indefinitely over time. As I acquire new insights and knowledge, you can expect updates and modifications that may alter the current content.
+- Please note that this repository incorporates a significant amount of AI-generated content. While every effort has been made to review and verify the material, not all content has undergone thorough proofreading. Consequently, there may be occasional code errors, inaccuracies, or hallucinations in the content. Users are encouraged to verify and test the information before using it in critical applications.
+- This repository is a continuous work in progress intended for my personal learning journey and will evolve indefinitely over time. As I acquire new insights and knowledge, you can expect updates and modifications that may alter the current content.
++ Additionally, I frequently employ storytelling techniques throughout this repository to make the material more accessible and engaging. However, this narrative approach may sometimes lead to oversimplifications or misinterpretations.
 
 
 
