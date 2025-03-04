@@ -8,6 +8,12 @@ This repository serves as:
 - A **reference guide** to revisit key ideas in Deep Learning, Neural Networks, and related fields.
 - A **learning journal** to track progress and consolidate knowledge through well-organized notes.
 
+## ❗Disclaimer 
+
+Please note that this repository incorporates a significant amount of AI-generated content. While every effort has been made to review and verify the material, not all content has undergone thorough proofreading. Consequently, there may be occasional code errors, inaccuracies, or hallucinations in the content. Users are encouraged to verify and test the information before using it in critical applications.
+
+
+
 ## 📂 Folder Structure
 
 Below is an overview of the repository’s thematic folder structure:

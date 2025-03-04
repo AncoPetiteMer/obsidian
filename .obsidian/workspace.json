@@ -11,24 +11,10 @@
             "id": "c37b8d6a5f126597",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ML/Ml workflow/obsidian/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Data Cleaning"
+              "title": "New tab"
             }
           },
           {
@@ -37,9 +23,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Usefull references.md",
+                "file": "README.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
                   "collapseAll": false,
@@ -52,7 +38,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Usefull references"
+              "title": "README"
             }
           },
           {
@@ -248,11 +234,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50dbffc22e576d4d",
+  "active": "c6ae98c6b8395837",
   "lastOpenFiles": [
-    "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
-    "README.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/PCA.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance Handling.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Data Preprocessing.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/EDA.md",
+    "ML/Layers_&_Architectures/Activation Functions.md",
+    "ML/Layers_&_Architectures/Bidirectional GRU Layer.md",
+    "ML/Layers_&_Architectures/Dropout for Regularization.md",
+    "ML/Layers_&_Architectures/Global Max Pooling Layer.md",
     "ML/Layers_&_Architectures/Multi-Head Attention.md",
+    "README.md",
+    "ML/Usefull references.md",
+    "LICENSE",
+    "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
     "ML/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
     "ML/Reinforcement_Learning",
     "ML/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
@@ -269,22 +266,12 @@
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Engineering.md",
     "ML/Natural_Language_Processing",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering",
-    "ML/Layers_&_Architectures/Dropout for Regularization.md",
     "ML/Ml workflow/obsidian/Special Topics & Techniques/Feature_Engineering_and_Scaling",
     "ML/Deep Learning & Neural Networks/Training/Early Stopping.md",
-    "ML/Layers_&_Architectures/Activation Functions.md",
-    "ML/Machine_Learning_Algorithms/Ensemble_Methods/Bootstrap Sampling.md",
     "ML/Deep Learning & Neural Networks/Training",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Handling Outliers.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/PCA.md",
-    "ML/Evaluation/Overfitting and Underfitting.md",
-    "ML/Layers_&_Architectures/RNN.md",
-    "ML/Layers_&_Architectures/Transformers.md",
     "ML/Workflow & Projects/Case_Studies",
     "ML/Workflow & Projects/General_Workflow",
-    "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks.md",
     "ML/Ml workflow/obsidian/Deep Learning & Neural Networks/Regularization_&_Optimization",
-    "ML/Layers_&_Architectures",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
