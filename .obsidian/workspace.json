@@ -23,8 +23,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
+                "file": "ML/Evaluation/Overfitting and Underfitting.md",
+                "mode": "source",
                 "source": true,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -38,7 +38,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Overfitting and Underfitting"
             }
           },
           {
@@ -236,6 +236,14 @@
   },
   "active": "c6ae98c6b8395837",
   "lastOpenFiles": [
+    "ML/Evaluation/Cross-Validation.md",
+    "ML/Machine_Learning_Algorithms/Traditional_Models/SVM.md",
+    "ML/Machine_Learning_Algorithms/Traditional_Models/Random Forest.md",
+    "ML/Machine_Learning_Algorithms/Traditional_Models/Naïve Bayes.md",
+    "ML/Machine_Learning_Algorithms/Traditional_Models/K-Means.md",
+    "ML/Layers_&_Architectures/Global Max Pooling Layer.md",
+    "README.md",
+    "ML/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/PCA.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance Handling.md",
@@ -244,13 +252,10 @@
     "ML/Layers_&_Architectures/Activation Functions.md",
     "ML/Layers_&_Architectures/Bidirectional GRU Layer.md",
     "ML/Layers_&_Architectures/Dropout for Regularization.md",
-    "ML/Layers_&_Architectures/Global Max Pooling Layer.md",
     "ML/Layers_&_Architectures/Multi-Head Attention.md",
-    "README.md",
     "ML/Usefull references.md",
     "LICENSE",
     "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
-    "ML/Reinforcement_Learning/The Reinforcement Learning for Deepseek r1.md",
     "ML/Reinforcement_Learning",
     "ML/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
     "ML/Machine_Learning_Algorithms/Models.md",
@@ -259,15 +264,10 @@
     "ML/Machine_Learning_Algorithms/Machine Learning Subfields.md",
     "ML/Workflow & Projects/Case_Studies/Titanic Survival Prediction Story 🚢🌲.md",
     "ML/Ml workflow/obsidian/DeepSeek-R1, RL.md",
-    "ML/Workflow & Projects/Case_Studies/Building a Fraud Detection System..md",
     "ML/Evaluation",
-    "ML/Natural_Language_Processing/Temperature and top P in Transformers.md",
-    "ML/Natural_Language_Processing/Padding.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Engineering.md",
     "ML/Natural_Language_Processing",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering",
     "ML/Ml workflow/obsidian/Special Topics & Techniques/Feature_Engineering_and_Scaling",
-    "ML/Deep Learning & Neural Networks/Training/Early Stopping.md",
     "ML/Deep Learning & Neural Networks/Training",
     "ML/Workflow & Projects/Case_Studies",
     "ML/Workflow & Projects/General_Workflow",
