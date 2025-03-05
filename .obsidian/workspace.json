@@ -35,10 +35,48 @@
             "id": "dc2fd43daa2e0d3c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Neural Networks history"
+            }
+          },
+          {
+            "id": "f0975526fba4dccc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Deep Learning & Neural Networks/Training/Training Loop.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Training Loop"
             }
           },
           {
@@ -76,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -243,8 +281,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc2fd43daa2e0d3c",
+  "active": "f0975526fba4dccc",
   "lastOpenFiles": [
+    "optimizer.zero_grad().md",
+    "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks history.md",
     "ML/Layers_&_Architectures/Cross-Entropy.md",
     "ML/Deep Learning & Neural Networks/Training/Loss Function.md",
     "ML/Evaluation/Cross-Validation.md",
@@ -269,8 +309,6 @@
     "ML/Layers_&_Architectures/Multi-Head Attention.md",
     "ML/Layers_&_Architectures/GRU.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Dimensionality Reduction.md",
     "LICENSE",
     "ML/Reinforcement_Learning",
     "ML/Evaluation",
