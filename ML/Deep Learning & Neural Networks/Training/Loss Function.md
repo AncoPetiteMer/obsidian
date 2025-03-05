@@ -68,17 +68,13 @@ Let’s calculate loss with **Mean Squared Error (MSE)** for a regression proble
 
 #### **Python Example: MSE for House Price Prediction**
 
-python
+```python
 
-CopierModifier
+```
 
 `import numpy as np  # Actual and predicted prices actual_prices = np.array([300000, 400000, 250000])  # True house prices predicted_prices = np.array([310000, 380000, 240000])  # Model's predictions  # Calculate Mean Squared Error (MSE) errors = actual_prices - predicted_prices  # Calculate the errors squared_errors = errors ** 2  # Square the errors mse = squared_errors.mean()  # Take the average of the squared errors  print(f"Mean Squared Error (MSE): {mse}")`
 
 **Output**:
-
-java
-
-CopierModifier
 
 `Mean Squared Error (MSE): 166666666.67`
 
@@ -86,7 +82,7 @@ The loss tells us that, on average, the squared error for this model is very lar
 
 ---
 
-#### **Python Example: Cross-Entropy Loss for Classification**
+#### **Python Example: [[Cross-Entropy]] Loss for Classification**
 
 Let’s say we’re predicting whether a transaction is fraudulent (`1`) or not (`0`):
 
@@ -98,9 +94,9 @@ Let’s say we’re predicting whether a transaction is fraudulent (`1`) or not 
 
 The model outputs a probability for each transaction being fraudulent. A good model will give high probabilities for fraudulent transactions and low probabilities for non-fraudulent ones. **Cross-Entropy Loss** penalizes the model when it’s wrong or overly confident in the wrong direction.
 
-python
+```python
 
-CopierModifier
+```
 
 `import torch import torch.nn as nn  # True labels y_true = torch.tensor([0, 1, 1], dtype=torch.float32)  # 0 = not fraud, 1 = fraud  # Model predictions (probabilities) y_pred = torch.tensor([0.2, 0.9, 0.4], dtype=torch.float32)  # Reshape predictions and labels for CrossEntropyLoss y_true = y_true.unsqueeze(0)  # Reshape to match CrossEntropyLoss format y_pred = y_pred.unsqueeze(0)  # Define the loss function loss_fn = nn.CrossEntropyLoss()  # Calculate loss loss = loss_fn(y_pred, y_true.long()) print(f"Cross-Entropy Loss: {loss.item()}")`
 

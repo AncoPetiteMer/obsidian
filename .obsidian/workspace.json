@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Layers_&_Architectures/Dropout for Regularization.md",
+                "file": "ML/Usefull references.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,31 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Dropout for Regularization"
+              "title": "Usefull references"
+            }
+          },
+          {
+            "id": "dc2fd43daa2e0d3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Layers_&_Architectures/Cross-Entropy.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Cross-Entropy"
             }
           },
           {
@@ -65,7 +89,8 @@
               "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +122,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "optimizer",
+                "query": "cross entrop",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -232,9 +257,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c37b8d6a5f126597",
+  "active": "dc2fd43daa2e0d3c",
   "lastOpenFiles": [
+    "ML/Deep Learning & Neural Networks/Training/Loss Function.md",
+    "ML/Evaluation/Cross-Validation.md",
+    "Cross-Entropy.md",
+    "ML/Deep Learning & Neural Networks/Neural_Networks/Neural Networks.md",
+    "ML/Layers_&_Architectures/Cross-Entropy.md",
     "ML/Usefull references.md",
+    "ML/Natural_Language_Processing/NLP glossary.md",
+    "ML/Layers_&_Architectures/Dropout for Regularization.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Standardization (Z-Score Scaling).md",
     "ML/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
     "ML/Fundamentals/Mathematical_Foundations/Eigenvalues & Eigenvectors.md",
@@ -244,7 +276,6 @@
     "ML/Fundamentals/Data_Processing_&_Statistics/EDA.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Engineering.md",
-    "ML/Layers_&_Architectures/Dropout for Regularization.md",
     "ML/Machine_Learning_Algorithms/Traditional_Models/K-Means.md",
     "ML/Layers_&_Architectures/RNN.md",
     "ML/Layers_&_Architectures/Bidirectional GRU.md",
@@ -254,12 +285,6 @@
     "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Dimensionality Reduction.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Bootstrap Sampling.md",
-    "ML/Machine_Learning_Algorithms/Ensemble_Methods/Ensemble Learning.md",
-    "ML/Natural_Language_Processing/NLP glossary.md",
-    "ML/Natural_Language_Processing/Padding.md",
-    "ML/Natural_Language_Processing/Embedding.md",
-    "ML/Layers_&_Architectures/Global Max Pooling.md",
     "LICENSE",
     "ML/Reinforcement_Learning",
     "ML/Evaluation",
