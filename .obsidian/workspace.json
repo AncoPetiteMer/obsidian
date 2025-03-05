@@ -11,44 +11,10 @@
             "id": "c37b8d6a5f126597",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "c6ae98c6b8395837",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance.md",
-                "mode": "preview",
-                "source": true,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Class Imbalance"
-            }
-          },
-          {
-            "id": "e8a7b5068d25c254",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
-                "mode": "preview",
+                "file": "ML/Layers_&_Architectures/Dropout for Regularization.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -62,7 +28,17 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Feature Scaling"
+              "title": "Dropout for Regularization"
+            }
+          },
+          {
+            "id": "e8a7b5068d25c254",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -89,8 +65,7 @@
               "title": "README"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,7 +138,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +147,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Feature Scaling"
+              "title": "Backlinks"
             }
           },
           {
@@ -241,12 +215,12 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -258,34 +232,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e8a7b5068d25c254",
+  "active": "c37b8d6a5f126597",
   "lastOpenFiles": [
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Engineering.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Dimensionality Reduction.md",
+    "ML/Usefull references.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Standardization (Z-Score Scaling).md",
+    "ML/Fundamentals/Mathematical_Foundations/Mathematical Foundations of Random Forests.md",
+    "ML/Fundamentals/Mathematical_Foundations/Eigenvalues & Eigenvectors.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/PCA.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Outliers.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Data Preprocessing.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/EDA.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Engineering.md",
+    "ML/Layers_&_Architectures/Dropout for Regularization.md",
+    "ML/Machine_Learning_Algorithms/Traditional_Models/K-Means.md",
+    "ML/Layers_&_Architectures/RNN.md",
+    "ML/Layers_&_Architectures/Bidirectional GRU.md",
+    "ML/Layers_&_Architectures/Activation Functions.md",
+    "ML/Layers_&_Architectures/Multi-Head Attention.md",
+    "ML/Layers_&_Architectures/GRU.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Feature Scaling.md",
+    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Dimensionality Reduction.md",
     "ML/Fundamentals/Data_Processing_&_Statistics/Bootstrap Sampling.md",
     "ML/Machine_Learning_Algorithms/Ensemble_Methods/Ensemble Learning.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Class Imbalance.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Data Cleaning.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Outliers.md",
     "ML/Natural_Language_Processing/NLP glossary.md",
     "ML/Natural_Language_Processing/Padding.md",
     "ML/Natural_Language_Processing/Embedding.md",
-    "ML/Layers_&_Architectures/GRU.md",
     "ML/Layers_&_Architectures/Global Max Pooling.md",
-    "ML/Layers_&_Architectures/Bidirectional GRU.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Data Preprocessing.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/EDA.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Visualization Techniques.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/PCA.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Better Alternatives to One-Hot Encoding.md",
-    "ML/Evaluation/Overfitting and Underfitting.md",
-    "ML/Evaluation/Cross-Validation.md",
-    "ML/Machine_Learning_Algorithms/Traditional_Models/SVM.md",
-    "ML/Machine_Learning_Algorithms/Traditional_Models/Random Forest.md",
-    "ML/Machine_Learning_Algorithms/Traditional_Models/Naïve Bayes.md",
-    "ML/Machine_Learning_Algorithms/Traditional_Models/K-Means.md",
     "LICENSE",
     "ML/Reinforcement_Learning",
     "ML/Evaluation",

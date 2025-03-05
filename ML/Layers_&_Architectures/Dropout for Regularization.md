@@ -47,9 +47,9 @@ Let’s implement dropout in a simple neural network using PyTorch.
 
 We’ll use a toy dataset to train a neural network.
 
-python
+```python
 
-CopierModifier
+```
 
 `import torch import torch.nn as nn import torch.optim as optim  # Sample data: Transaction features (Amount, Time, etc.) and fraud labels (0 = non-fraud, 1 = fraud) X = torch.tensor([[10.0, 1.0], [50.0, 2.0], [5000.0, 3.0], [200.0, 4.0], [10000.0, 5.0]], dtype=torch.float32) y = torch.tensor([[0], [0], [1], [0], [1]], dtype=torch.float32)`
 
@@ -59,9 +59,9 @@ CopierModifier
 
 We’ll add a dropout layer after the first hidden layer.
 
-python
+```python
 
-CopierModifier
+```
 
 `class FraudDetectionNN(nn.Module):     def __init__(self):         super(FraudDetectionNN, self).__init__()         self.network = nn.Sequential(             nn.Linear(2, 16),  # Input layer (2 features) to hidden layer (16 neurons)             nn.ReLU(),         # Activation function             nn.Dropout(0.5),   # Dropout: Randomly drop 50% of neurons during training             nn.Linear(16, 1),  # Hidden layer to output layer (1 neuron)             nn.Sigmoid()       # Sigmoid activation for binary classification         )      def forward(self, x):         return self.network(x)  # Initialize the model model = FraudDetectionNN()`
 
@@ -71,9 +71,9 @@ CopierModifier
 
 We’ll train the model using a simple training loop.
 
-python
+```python
 
-CopierModifier
+```
 
 `# Define loss function and optimizer criterion = nn.BCELoss()  # Binary Cross-Entropy Loss for binary classification optimizer = optim.Adam(model.parameters(), lr=0.01)  # Training loop epochs = 100 for epoch in range(epochs):     # Forward pass     predictions = model(X)     loss = criterion(predictions, y)      # Backward pass     optimizer.zero_grad()     loss.backward()     optimizer.step()      if (epoch + 1) % 10 == 0:         print(f"Epoch {epoch+1}/{epochs}, Loss: {loss.item():.4f}")`
 
@@ -83,9 +83,9 @@ CopierModifier
 
 During testing, dropout is automatically disabled.
 
-python
+```python
 
-CopierModifier
+```
 
 `# Test the model model.eval()  # Set the model to evaluation mode (dropout is disabled) test_input = torch.tensor([[1000.0, 3.0], [20.0, 2.0]], dtype=torch.float32) predictions = model(test_input) print("\nFraud Predictions (Probability):") print(predictions)`
 
@@ -100,9 +100,9 @@ CopierModifier
 
 Let’s visualize the effect of dropout on the activation of neurons in a simple layer.
 
-python
+```python
 
-CopierModifier
+```
 
 `import numpy as np import matplotlib.pyplot as plt  # Simulate activations before and after dropout activations = np.random.rand(100)  # Simulated activations (random values) dropout_mask = np.random.binomial(1, 0.5, size=100)  # Dropout mask (50% neurons active)  # Apply dropout activations_with_dropout = activations * dropout_mask  # Plot activations plt.figure(figsize=(12, 6)) plt.subplot(1, 2, 1) plt.bar(range(100), activations, color="blue", alpha=0.7) plt.title("Activations Before Dropout") plt.subplot(1, 2, 2) plt.bar(range(100), activations_with_dropout, color="red", alpha=0.7) plt.title("Activations After Dropout") plt.show()`
 
