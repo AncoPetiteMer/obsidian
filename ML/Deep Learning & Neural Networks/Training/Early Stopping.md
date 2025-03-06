@@ -55,11 +55,25 @@ Let’s see how early stopping works in practice.
 
 We’ll use a simple dataset to train a neural network.
 
-python
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import make_regression
 
-CopierModifier
+# Generate a synthetic regression dataset
+X, y = make_regression(n_samples=500, n_features=1, noise=10, random_state=42)
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
 
-`import torch import torch.nn as nn import torch.optim as optim from sklearn.model_selection import train_test_split from sklearn.datasets import make_regression  # Generate a synthetic regression dataset X, y = make_regression(n_samples=500, n_features=1, noise=10, random_state=42) X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)  # Convert data to PyTorch tensors X_train_tensor = torch.tensor(X_train, dtype=torch.float32) y_train_tensor = torch.tensor(y_train, dtype=torch.float32).view(-1, 1) X_val_tensor = torch.tensor(X_val, dtype=torch.float32) y_val_tensor = torch.tensor(y_val, dtype=torch.float32).view(-1, 1)`
+# Convert data to PyTorch tensors
+X_train_tensor = torch.tensor(X_train, dtype=torch.float32)
+y_train_tensor = torch.tensor(y_train, dtype=torch.float32).view(-1, 1)
+X_val_tensor = torch.tensor(X_val, dtype=torch.float32)
+y_val_tensor = torch.tensor(y_val, dtype=torch.float32).view(-1, 1)
+
+```
+
 
 ---
 
@@ -67,21 +81,36 @@ CopierModifier
 
 We’ll create a simple neural network for regression.
 
-python
+```python
+class SimpleNN(nn.Module):
+    def __init__(self):
+        super(SimpleNN, self).__init__()
+        self.network = nn.Sequential(
+            nn.Linear(1, 16),
+            nn.ReLU(),
+            nn.Linear(16, 1)
+        )
 
-CopierModifier
+    def forward(self, x):
+        return self.network(x)
 
-`class SimpleNN(nn.Module):     def __init__(self):         super(SimpleNN, self).__init__()         self.network = nn.Sequential(             nn.Linear(1, 16),             nn.ReLU(),             nn.Linear(16, 1)         )      def forward(self, x):         return self.network(x)  # Initialize the model model = SimpleNN()`
+# Initialize the model
+model = SimpleNN()
+
+```
+`
 
 ---
 
 #### **Loss and Optimizer**
 
-python
+```python
+# Define the loss function and optimizer
+criterion = nn.MSELoss()
+optimizer = optim.Adam(model.parameters(), lr=0.01)
 
-CopierModifier
+```
 
-`# Define the loss function and optimizer criterion = nn.MSELoss() optimizer = optim.Adam(model.parameters(), lr=0.01)`
 
 ---
 
@@ -89,11 +118,44 @@ CopierModifier
 
 We’ll monitor the validation loss and stop training when it doesn’t improve for a certain number of epochs.
 
-python
+```python
+# Early Stopping Parameters
+patience = 10  # Number of epochs to wait for improvement
+best_loss = float('inf')  # Initialize the best validation loss
+counter = 0  # Counter to track how many epochs have passed without improvement
 
-CopierModifier
+# Training Loop
+epochs = 100
+for epoch in range(epochs):
+    # Train the model
+    model.train()
+    optimizer.zero_grad()
+    predictions = model(X_train_tensor)
+    train_loss = criterion(predictions, y_train_tensor)
+    train_loss.backward()
+    optimizer.step()
 
-`# Early Stopping Parameters patience = 10  # Number of epochs to wait for improvement best_loss = float('inf')  # Initialize the best validation loss counter = 0  # Counter to track how many epochs have passed without improvement  # Training Loop epochs = 100 for epoch in range(epochs):     # Train the model     model.train()     optimizer.zero_grad()     predictions = model(X_train_tensor)     train_loss = criterion(predictions, y_train_tensor)     train_loss.backward()     optimizer.step()      # Evaluate on validation set     model.eval()     with torch.no_grad():         val_predictions = model(X_val_tensor)         val_loss = criterion(val_predictions, y_val_tensor)      # Print training and validation loss     print(f"Epoch {epoch+1}/{epochs}, Train Loss: {train_loss.item():.4f}, Val Loss: {val_loss.item():.4f}")      # Check for early stopping     if val_loss.item() < best_loss:         best_loss = val_loss.item()         counter = 0  # Reset counter if validation loss improves     else:         counter += 1  # Increment counter if no improvement         if counter >= patience:             print(f"Early stopping at epoch {epoch+1}")             break`
+    # Evaluate on validation set
+    model.eval()
+    with torch.no_grad():
+        val_predictions = model(X_val_tensor)
+        val_loss = criterion(val_predictions, y_val_tensor)
+
+    # Print training and validation loss
+    print(f"Epoch {epoch+1}/{epochs}, Train Loss: {train_loss.item():.4f}, Val Loss: {val_loss.item():.4f}")
+
+    # Check for early stopping
+    if val_loss.item() < best_loss:
+        best_loss = val_loss.item()
+        counter = 0  # Reset counter if validation loss improves
+    else:
+        counter += 1  # Increment counter if no improvement
+        if counter >= patience:
+            print(f"Early stopping at epoch {epoch+1}")
+            break
+
+```
+
 
 ---
 
@@ -118,11 +180,28 @@ CopierModifier
 
 Let’s plot the training and validation loss over epochs.
 
-python
+```python
+import matplotlib.pyplot as plt
 
-CopierModifier
+# Example data for visualization
+epochs = list(range(1, 21))
+train_loss = [0.8, 0.7, 0.6, 0.55, 0.5, 0.45, 0.4, 0.38, 0.35, 0.34,
+              0.33, 0.33, 0.34, 0.35, 0.36, 0.37, 0.38, 0.39, 0.4, 0.41]
+val_loss = [0.9, 0.75, 0.65, 0.58, 0.55, 0.54, 0.53, 0.54, 0.55, 0.56,
+            0.57, 0.58, 0.6, 0.62, 0.65, 0.68, 0.7, 0.72, 0.75, 0.78]
 
-`import matplotlib.pyplot as plt  # Example data for visualization epochs = list(range(1, 21)) train_loss = [0.8, 0.7, 0.6, 0.55, 0.5, 0.45, 0.4, 0.38, 0.35, 0.34, 0.33, 0.33, 0.34, 0.35, 0.36, 0.37, 0.38, 0.39, 0.4, 0.41] val_loss = [0.9, 0.75, 0.65, 0.58, 0.55, 0.54, 0.53, 0.54, 0.55, 0.56, 0.57, 0.58, 0.6, 0.62, 0.65, 0.68, 0.7, 0.72, 0.75, 0.78]  # Plot the losses plt.plot(epochs, train_loss, label="Train Loss", color="blue") plt.plot(epochs, val_loss, label="Validation Loss", color="red") plt.axvline(x=12, color='green', linestyle='--', label="Early Stopping Point") plt.xlabel("Epochs") plt.ylabel("Loss") plt.title("Training vs Validation Loss") plt.legend() plt.show()`
+# Plot the losses
+plt.plot(epochs, train_loss, label="Train Loss", color="blue")
+plt.plot(epochs, val_loss, label="Validation Loss", color="red")
+plt.axvline(x=12, color='green', linestyle='--', label="Early Stopping Point")
+plt.xlabel("Epochs")
+plt.ylabel("Loss")
+plt.title("Training vs Validation Loss")
+plt.legend()
+plt.show()
+
+```
+
 
 ---
 

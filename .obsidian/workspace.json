@@ -296,6 +296,30 @@
             }
           },
           {
+            "id": "24ba048c1d956f96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ML/Deep Learning & Neural Networks/Training/Early Stopping.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Early Stopping"
+            }
+          },
+          {
             "id": "e8a7b5068d25c254",
             "type": "leaf",
             "state": {
@@ -330,7 +354,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -497,10 +521,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "50dbffc22e576d4d",
+  "active": "24ba048c1d956f96",
   "lastOpenFiles": [
-    "ML/Evaluation/Data Augmentation.md",
+    "ML/Deep Learning & Neural Networks/Training/Hyperparameter Tuning.md",
     "ML/Deep Learning & Neural Networks/Training/L2 Regularization.md",
+    "ML/Deep Learning & Neural Networks/Training/Early Stopping.md",
+    "Detach vector.md",
+    "ML/Evaluation/Data Augmentation.md",
     "ML/Evaluation/Glorot Initialization.md",
     "ML/Layers_&_Architectures/Dropout for Regularization.md",
     "ML/Layers_&_Architectures/RNN.md",
@@ -522,9 +549,6 @@
     "ML/Deep Learning & Neural Networks/Training/Loss Function.md",
     "ML/Evaluation/Cross-Validation.md",
     "Cross-Entropy.md",
-    "ML/Usefull references.md",
-    "ML/Natural_Language_Processing/NLP glossary.md",
-    "ML/Fundamentals/Data_Processing_&_Statistics/Feature_Engineering/Standardization (Z-Score Scaling).md",
     "LICENSE",
     "ML/Reinforcement_Learning",
     "ML/Evaluation",
