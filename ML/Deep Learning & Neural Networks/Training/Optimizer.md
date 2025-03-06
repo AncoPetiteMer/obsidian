@@ -34,7 +34,7 @@ The optimizer adjusts the model’s weights and biases based on:
 ### **Step 2: Optimizers in Action**
 
 #### **Example: Climbing Down a Loss Mountain**
-
+[[optimizer.zero_grad()]]
 Imagine you’re teaching a robot to adjust the price of a house based on its size. At first:
 
 - The robot predicts all houses cost $1 million, which is way off.

@@ -1,5 +1,5 @@
 ### **What is a Neural Network?**
-
+[[Neural Networks history]]
 Imagine you’re a teacher with a classroom full of students, and your goal is to help them solve a math problem, like calculating the total cost of items in a shopping cart. At first, the students make random guesses, but with some guidance, feedback, and practice, they start to learn how to approach the problem. By the end, they can consistently give the correct answer.
 
 In machine learning, a **Neural Network** is like this classroom of students. It’s a model made up of interconnected "neurons" that work together to solve problems. These neurons are grouped into **layers**:
@@ -66,7 +66,7 @@ But before the network can work its magic, it needs to go through **training** t
 - Bias allows the network to shift its decision boundary. It’s like an extra boost to help neurons "fire" even when the inputs are weak.
 
 #### **Activation Functions**:
-
+[[Vanishing Gradient]]
 - These decide whether a neuron should activate (pass its information to the next layer). For example:
     - **ReLU (Rectified Linear Unit)**: Outputs the input if it’s positive, otherwise outputs 0.
     - Activation functions allow the network to learn complex, non-linear patterns.
@@ -74,13 +74,13 @@ But before the network can work its magic, it needs to go through **training** t
 ---
 
 ### **Step 3: Training a Neural Network**
-
+[[Training Loop]]
 To train a neural network, you:
 
 1. Feed the network examples (inputs) from your dataset.
 2. Compare the network’s predictions with the true labels (e.g., `Fraudulent` or `Not Fraudulent`).
 3. Calculate the **error** using a **loss function**.
-4. Adjust the weights and biases to reduce the error. This is done using **backpropagation** and an **optimizer** (like Adam).
+4. Adjust the weights and biases to reduce the error. This is done using **[[backpropagation]]** and an **optimizer** (like Adam).
 
 ---
 
