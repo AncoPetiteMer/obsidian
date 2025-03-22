@@ -47,7 +47,7 @@ Below is an overview of the repository’s thematic folder structure:
 ## 🛠️ How to Use
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/obsidian-ml-notes.git
+   git clone https://github.com/AncoPetiteMer/obsidian.git
    ```
 2. Open in [Obsidian](https://obsidian.md/).
 3. Explore, edit, and contribute to your learning journey!
